@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    android:background="@color/list_divider"
+    android:parentActivityName="marcobarrios.biotasp.MainActivity">
+
+    <TextView
+        android:id="@+id/txt_datosactividad"
+        android:text="@string/datos_actividad"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:gravity="center"
+        android:background="@color/primary"
+        android:textColor="@color/list_divider"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_below="@+id/txt_datosactividad">
+
+    <Spinner
+        android:id="@+id/spinner_tipoactividad"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:drawSelectorOnTop="true"
+        android:entries="@array/nuevos_tipos_actividad"/>
+
+    <Spinner
+        android:id="@+id/spinner_tema"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:drawSelectorOnTop="true"
+        android:layout_below="@+id/spinner_tipoactividad"
+        android:entries="@array/nuevos_temas" />
+
+    <Spinner
+        android:id="@+id/spinner_sub_tema"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:drawSelectorOnTop="true"
+        android:layout_below="@+id/spinner_tema"
+        android:entries="@array/sub_temas" />
+
+    <TableLayout
+        android:id="@+id/table_1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner_sub_tema">
+        <TableRow
+            android:layout_marginTop="30dp">
+            <Spinner
+                android:id="@+id/spinner_grupo"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/grupos" />
+
+            <Spinner
+                android:id="@+id/spinner_subgrupo"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/array_subgrupo_hsh"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="30dp">
+            <TextView
+                android:id="@+id/txt_departamentos_da"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                android:clickable="false"
+                android:text="Quetzaltenango"
+                android:drawSelectorOnTop="true" />
+
+            <TextView
+                android:id="@+id/txt_municipios_da"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                android:clickable="false"
+                android:text="Quetzaltenango"
+                android:drawSelectorOnTop="true" />
+        </TableRow>
+        </TableLayout>
+
+    <Spinner
+        android:id="@+id/spinner_lugar_da"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/table_1"
+        android:entries="@array/array_clinicas"
+        android:layout_marginTop="30dp"/>
+
+    <TableLayout
+        android:id="@+id/table_2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner_lugar_da">
+        <TableRow
+            android:layout_marginTop="10dp">
+            <Button
+                android:id="@+id/txt_fecha_da"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="16dp"
+                android:text="@string/fecha_actividad"/>
+
+            <Button
+                android:id="@+id/txt_hora_da"
+                android:layout_width="0px"
+                android:layout_marginLeft="16dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/hora_actividad"/>
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="30dp">
+        <EditText
+            android:id="@+id/txt_condonesdemo"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:hint="@string/condones_demo"/>
+
+        <EditText
+            android:id="@+id/txt_codactiv"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:hint="@string/codactiv"/>
+        </TableRow>
+    </TableLayout>
+
+    <EditText
+        android:id="@+id/txt_observaciones_da"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:inputType="textMultiLine"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/table_2"
+        android:hint="@string/hint_observaciones"/>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <com.melnykov.fab.FloatingActionButton
+            android:id="@+id/button_save_data_actividad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:src="@drawable/abc_ic_menu_paste_mtrl_am_alpha"
+            android:layout_margin="16dp"
+            fab:fab_colorNormal="@color/accent"
+            fab:fab_colorPressed="@color/primary_pressed"
+            fab:fab_colorRipple="@color/ripple"/>
+    </FrameLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Parent" parent="android:Theme.Holo.Light.DarkActionBar">
+
+        <item name="android:dropDownListViewStyle">
+            @android:style/Widget.Holo.Light.ListView.DropDown
+        </item>
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.MyParent</item>
+        <item name="android:actionModeBackground">@drawable/square_action_bar</item>
+        <item name="android:actionBarSize">56dp</item>
+        <item name="android:dialogTheme">@android:style/Theme.Holo.Light.Dialog</item>
+        <item name="android:itemTextAppearance">@style/ActionMenuTextAppearance</item>
+
+    </style>
+
+    <style name="ActionMenuTextAppearance">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="TextAppearance">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="ActionBar.Solid.MyParent" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:icon">@drawable/transparent</item>
+        <item name="android:background">@drawable/square_action_bar</item>
+        <item name="android:titleTextStyle">@style/ActionTitleTextStyle</item>
+    </style>
+
+    <style name="ActionTitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">#fff</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

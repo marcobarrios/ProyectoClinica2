@@ -1,0 +1,486 @@
+<resources>
+    <string name="app_name">BioTasP</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string-array name="nav_drawer_items">
+        <item >Inicio</item>
+        <item >Actividades</item>
+        <item >Sincronizar</item>
+        <item >Acerca de...</item>
+    </string-array>
+
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_evento</item>
+        <item>@drawable/ic_anotacion</item>
+        <item>@drawable/ic_curso</item>
+        <item>@drawable/ic_nota</item>
+    </array>
+
+    <string name="action_websearch">Web search</string>
+    <string name="main_title">Registro de nueva intervención</string>
+    <string name="main_huella">Registrar Huella</string>
+    <string name="main_guardar">Guardar registro</string>
+    <string name="main_test">Llenar cuestionario</string>
+    <string name="hint_nombre">Ingrese nombre</string>
+    <string name="hint_apellido">Ingrese apellido</string>
+    <string name="hint_edad">Edad</string>
+    <string name="hint_fechanac">Fecha de nacimiento</string>
+    <string name="elegir_opcion">Elija una opción</string>
+    <string name="txt_test">HOLA TEST!</string>
+    <string name="test">Test!</string>
+    <string name="cancel">Cancelar</string>
+    <string name="ccc">Actividad CCC</string>
+    <string name="tvc">TVC / ITS</string>
+    <string name="acomp">Acompañamiento</string>
+    <string name="elegir_actividad">Elija actividad a crear</string>
+    <string name="registro_actividad">Registro de actividad</string>
+    <string name="tipo_actividad">Tipo de Actividad</string>
+    <string name="tema_actividad">Tema de Actividad</string>
+    <string name="educador_actividad">Educador</string>
+    <string name="grupo_actividad">Grupo</string>
+    <string name="pick_date">Elija Fecha</string>
+    <string name="fecha_actividad">Elija Fecha</string>
+    <string name="hint_fecha">13/02/2014</string>
+    <string name="lugar_actividad">Lugar de la actividad</string>
+    <string name="hint_lugar">Ej. Parque Central</string>
+    <string name="msg_1">Objetivo 1</string>
+    <string name="msg_4">Objetivo 4</string>
+    <string name="msg_recommendation">Recomendación</string>
+    <string name="hint_condones">Condones Demo</string>
+    <string name="hint_observaciones">Escriba aquí las observaciones</string>
+    <string name="drawer_open">Abrir</string>
+    <string name="drawer_close">Cerrar</string>
+    <string name="datos_actividad">Crear Nueva Actividad</string>
+    <string name="condones_demo">Condones demo</string>
+    <string name="condones">Condones entregados</string>
+    <string name="lubricantes">Lubricantes</string>
+    <string name="titulo_test">Test de conocimientos</string>
+    <string name="si">Sí</string>
+    <string name="no">No</string>
+    <string name="serial_number">s/n</string>
+    <string name="back">CONTINUAR -\u003E</string>
+    <string name="title_activity_capture_fingerprint">CaptureFingerprintActivity</string>
+    <string name="get_reader">Abrir Lector</string>
+    <string name="capture_fingerprint">Leer huella</string>
+    <string name="title_activity_get_reader">GetReaderActivity</string>
+    <string name="user_login">Ingreso de usuario</string>
+    <string name="ingrese_usuario">Usuario</string>
+    <string name="ingrese_password">Contraseña</string>
+    <string name="ingreso_boton">Ingreso</string>
+    <string name="impresos">Impresos entregados</string>
+    <string name="lubricantes_tubo">Tubos</string>
+    <string name="referencia_vih">Pasa a TVC</string>
+    <string name="referencia_its">Pasa a ITS</string>
+    <string name="tratado_its">Tratado</string>
+    <string name="tratado_its_fm">Tratado FM</string>
+    <string name="referido_its">Referido</string>
+    <string name="consentimiento">Hoja de consentimiento</string>
+    <string name="consentimiento_acepta">¿Puedo entonces hacerte las preguntas?</string>
+    <string name="modificar_actividad">Modificar actividad</string>
+    <string name="elija_actividad">Actividades</string>
+    <string name="hora_actividad">Elija Hora</string>
+    <string name="codactiv">Código de Actividad</string>
+    <string name="action_sign_in_register">Iniciar Sesión</string>
+    <string name="prompt_email">Usuario</string>
+    <string name="prompt_password">Contraseña</string>
+    <string name="action_sign_in_short">OTRA ACCION</string>
+    <string name="login_progress_signing_in">Mensaje inicio sesion</string>
+
+
+    <string name="sync">Sincronizando</string>
+
+    <string name="pregunta_1">1.- ¿Conoces que es una infección de transmisión sexual?</string>
+
+    <string name="pregunta_2">2.- ¿Cuáles consideras que sean algunas señales que presenta una persona que tiene VIH?</string>
+    <string name="pregunta_2a">Pérdida de peso mayor de 10%</string>
+    <string name="pregunta_2b">Diarrea repetidas</string>
+    <string name="pregunta_2c">Tos seca persistente</string>
+    <string name="pregunta_2d">Sudores nocturnos</string>
+    <string name="pregunta_2e">Cansancio</string>
+
+    <string name="pregunta_3">3.- ¿Ingieres bebidas alcohólicas? Si tu respuesta es sí, ¿Con qué frecuencia?</string>
+    <string name="pregunta_3a">Diario</string>
+    <string name="pregunta_3b">Cada fin de semana</string>
+    <string name="pregunta_3c">Ocasionalmente</string>
+    <string name="pregunta_3d">Socialmente</string>
+    <string name="pregunta_3e">Nunca</string>
+
+    <string name="pregunta_4">4.- Cuándo ingieres bebidas alcohólicas, ¿Con quién lo haces?</string>
+    <string name="pregunta_4a">Amigos</string>
+    <string name="pregunta_4b">Otros chicos en tu grupo</string>
+    <string name="pregunta_4c">Familiares</string>
+    <string name="pregunta_4d">Parejas ocasionales</string>
+    <string name="pregunta_4e">Pareja estable</string>
+    <string name="pregunta_4f">Desconocidos</string>
+
+    <string name="pregunta_5">5.- ¿Te han discriminado alguna vez? Si tu respuesta es sí, ¿Cómo te has sentido?</string>
+    <string name="pregunta_5a">Triste</string>
+    <string name="pregunta_5b">Ofendido</string>
+    <string name="pregunta_5c">Enojado</string>
+    <string name="pregunta_5d">Violento</string>
+    <string name="pregunta_5e">Busco Golpear a cualquier otra persona</string>
+
+    <string name="pregunta_6">6.- ¿En quién te refugias cuando tienes problemas personales o con tu pareja?</string>
+    <string name="pregunta_6a">Amigos</string>
+    <string name="pregunta_6b">Familia</string>
+    <string name="pregunta_6c">Religión</string>
+    <string name="pregunta_6d">Alcohol</string>
+    <string name="pregunta_6e">Nadie</string>
+
+    <string name="pregunta_7">7.- Aproximadamente, ¿Cuantas relaciones sexogenitales tienes al mes?</string>
+    <string name="pregunta_7a">1-3</string>
+    <string name="pregunta_7b">4-6</string>
+    <string name="pregunta_7c">7-9</string>
+    <string name="pregunta_7d">10 o más</string>
+
+    <string name="pregunta_8">8.- ¿Con quién sostienes estas relaciones sexogenitales?</string>
+    <string name="pregunta_8a">Pareja estable</string>
+    <string name="pregunta_8b">Parejas ocasionales</string>
+    <string name="pregunta_8c">Amigos</string>
+    <string name="pregunta_8d">Desconocidos</string>
+    <string name="pregunta_8e">Otros</string>
+
+    <string name="pregunta_9">9.- ¿Con qué frecuencia utilizas correctamente el condón en tus relaciones sexogenitales?</string>
+    <string name="pregunta_9a">Algunas veces</string>
+    <string name="pregunta_9b">Siempre</string>
+    <string name="pregunta_9c">Nunca</string>
+
+    <string name="pregunta_10">10.- ¿Consideras haber estado en riesgo de infectarte de ITS/VIH?</string>
+
+    <string name="pregunta_10a"> - Medidas que conoces para reducir el riesgo - </string>
+    <string name="pregunta_10b">Reducir las barreras y riesgos de infección</string>
+    <string name="pregunta_10c">Discutir estrategias para reducir estigma y discriminación</string>
+    <string name="pregunta_10d">Uso correcto y constante de condones</string>
+    <string name="pregunta_10e">Diagnostico y tratamiento de ITS cuando hay molestias</string>
+    <string name="pregunta_10f">Realizarse la prueba de VIH cada 6 meses</string>
+    <string name="pregunta_10g">Otros</string>
+
+
+
+
+    <string name="pregunta_100">1.- ¿Puede reducirse el riesgo de transmisión del VIH manteniendo relaciones sexuales con una única pareja fiel y no infectada?</string>
+    <string name="pregunta_200">2.- ¿Puede reducirse el riesgo de transmisión del VIH usando preservativos cada vez que se mantienen relaciones sexuales?</string>
+    <string name="pregunta_300">3.- ¿Puede una persona de aspecto saludable tener el VIH?</string>
+    <string name="pregunta_400">4.- ¿Se puede contraer el VIH por picaduras de mosquito?</string>
+    <string name="pregunta_500">5.- ¿Se puede contraer el VIH por compartir alimentos con una persona infectada?</string>
+
+    <string name="open_activity">Existe una actividad que no ha sido cerrada</string>
+
+
+    <string-array name="array_nacionalidad">
+        <item>Guatemala</item>
+        <item>Belice</item>
+        <item>El Salvador</item>
+        <item>Honduras</item>
+        <item>Nicaragua</item>
+        <item>Costa Rica</item>
+        <item>Panamá</item>
+        <item>México</item>
+        <item>Otros</item>
+    </string-array>
+
+    <string-array name="array_subgrupo_hsh">
+        <item>HSH en vía pública</item>
+        <item>HSH en lugares de socialización y/o encuentro</item>
+        <item>HSH trabajador sexual</item>
+    </string-array>
+
+    <string-array name="array_tipo_actividad">
+        <item>CCC</item>
+        <item>TVC/ITS</item>
+        <item>Acompañamiento</item>
+    </string-array>
+    <string-array name="array_sexo">
+        <item>Hombre</item>
+        <item>Mujer</item>
+        <item>Trans</item>
+    </string-array>
+    <string-array name="array_its">
+        <item>Seleccione resultado para ITS</item>
+        <item>Sindrome Flujo Vaginal</item>
+        <item>Sindrome Secreción Uretral</item>
+        <item>Sindrome Úlcera Genital O Extra Genital</item>
+        <item>Sindrome Dolor Abdominal Inferior</item>
+        <item>Sindrome Bubon Inguinal</item>
+        <item>Sindrome Proctitis</item>
+        <item>Sífilis</item>
+        <item>Micosis Superficial</item>
+        <item>Escabiosis</item>
+        <item>Pediculosis Pubis</item>
+        <item>Molusco Contagioso</item>
+        <item>Papilomatosis</item>
+    </string-array>
+    <string-array name="array_med_its">
+        <item>Fluconazol de 200 mg(1) ; Metronidazol 500mg Tableta(4) ; Ceftriaxona 500mg IM (1) ; Azitromicina 500mg Tableta(2)</item>
+        <item>Ceftriaxona 500mg IM (1) ; Azitromicina 500mg Tableta(2) ; Tinidazol 500mg Tableta(4) ; Metronidazol 500mg Tableta(4)</item>
+        <item>Penicilina benzatinica Vial de 2.4 millones de UI(1) ; Azitromicina 500mg Tableta(2) ; Aciclovir 400 mg (28)</item>
+        <item>Ceftriaxona 500mg IM (1) ; Azitromicina 500mg Tableta(2) ; Metronidazol 500mg Tableta(28)</item>
+        <item>Ceftriaxona 500mg IM (1) ; Azitromicina 500mg Tableta(6) ; Doxiciclina 100 mg Tableta(42)</item>
+        <item>Ceftriaxona 500mg IM (1) ; Azitromicina 500mg Tableta(2)</item>
+        <item>Penicilina benzatinica Vial de 2.4 millones de UI(3)</item>
+        <item>Clotrimazol crema al 1%(1)</item>
+        <item>Benzoato de bencilio locion(6)</item>
+        <item>Benzoato de bencilio locion(6)</item>
+        <item>Acido tricloroacetico del 80% al 90(2)</item>
+        <item>Podofilina solucion de Benjui al 25%(12)</item>
+    </string-array>
+    <string-array name="motivos_consulta_its">
+        <item>Referencia</item>
+        <item>Iniciativa propia</item>
+        <item>Tuberculosis</item>
+        <item>Embarazo</item>
+        <item>Paciente sintomático</item>
+        <item>ITS</item>
+        <item>Donador</item>
+        <item>Accidente laboral</item>
+        <item>Abuso sexual</item>
+        <item>Violación</item>
+        <item>Otro</item>
+    </string-array>
+
+    <string-array name="array_tvc">
+        <item>VIH Positivo</item>
+        <item>VIH Negativo</item>
+        <item>VIH Presuntivo</item>
+    </string-array>
+
+    <!-- <string-array name="array_drawer_options">
+        <item>Inicio de sesión</item>
+        <item>Crear nueva actividad</item>
+        <item>Enviar registros</item>
+        <item>Consultar datos</item>
+        <item>Ingresar datos</item>
+        <item>Crear nueva actividad (ITS)</item>
+        <item>Salir</item>
+    </string-array> -->
+
+    <string-array name="array_drawer_options">
+        <item>Inicio de sesión</item>
+        <item>Crear nueva actividad</item>
+        <item>Enviar registros</item>
+        <item>Consultar datos</item>
+        <item>Ingresar datos</item>
+        <item>Salir</item>
+    </string-array>
+
+    <string-array name="tipo_actividad">
+        <item>Juegos lúdicos</item>
+        <item>Abordaje cara a cara</item>
+        <item>Visitas de campo</item>
+        <item>Charla</item>
+        <item>Taller</item>
+        <item>Kiosko</item>
+        <item>Grupos de autoapoyo</item>
+        <item>Visitas domiciliares</item>
+        <item>Ferias de salud</item>
+        <item>Espacios seguros e interactivos</item>
+        <item>Entrevistas</item>
+        <item>Jornadas educativas</item>
+        <item>Demostraciones de uso del condón</item>
+        <item>Otros</item>
+        <item>TVC</item>
+        <item>Diagnóstico y tratamiento de ITS</item>
+        <item>Encuentro</item>
+        <item>Distribución de condones a PVV en UAI</item>
+        <item>Conmemoraciones</item>
+        <item>Caminatas</item>
+        <item>Pacientes con ARV</item>
+        <item>Pacientes profilaxis cotrimoxazole</item>
+        <item>Pacientes diagnosticados y tratados IO</item>
+        <item>Embarazadas con ARV</item>
+        <item>TVC embarazadas</item>
+        <item>TVC nucleos familiares</item>
+        <item>Foro</item>
+    </string-array>
+
+    <string-array name="nuevos_tipos_actividad">
+        <item>Actividad lúdica</item>
+        <item>Jornada de abordajes cara a cara</item>
+        <item>Visitas de campo</item>
+        <item>Charla</item>
+        <item>Taller</item>
+        <item>Kiosko</item>
+        <item>Grupo de autoapoyo</item>
+        <item>Visita domiciliar</item>
+        <item>Jornada de salud</item>
+        <item>Espacio seguro e interactivo</item>
+        <item>Entrevista</item>
+        <item>Jornada educativa</item>
+        <item>Encuentro</item>
+        <item>Foro</item>
+        <item>Caminata</item>
+        <item>Conmemoracion</item>
+        <item>Demostracion de uso del condon</item>
+        <item>Otro</item>
+    </string-array>
+
+    <string-array name="temas">
+        <item>Uso correcto del condón</item>
+        <item>Información básica sobre VIH/Sida</item>
+        <item>Información básica sobre ITS</item>
+        <item>Información sobre prueba voluntaria VIH</item>
+        <item>Autoestima</item>
+        <item>Salud Sexual</item>
+        <item>Salud reproductiva</item>
+        <item>Drogo dependencia</item>
+        <item>Equidad de género</item>
+        <item>Planificación familiar</item>
+        <item>Erradicación violencia contra mujeres</item>
+        <item>Trata de personas</item>
+        <item>Prácticas de auto cuidado de la salud</item>
+        <item>Adherencia a ARV</item>
+        <item>Nutrición</item>
+        <item>Derechos humanos</item>
+        <item>Erradicación homofobia</item>
+        <item>Erradicación estigma y discriminación</item>
+        <item>Referencias</item>
+        <item>Otros a especificar</item>
+        <item>No aplica</item>
+        <item>Información básica sobre TARGA</item>
+        <item>Información básica sobre IO</item>
+        <item>Enfermedades crónicas</item>
+        <item>Enfermedades producidas por vectores</item>
+        <item>Salud emocional</item>
+    </string-array>
+
+    <string-array name="nuevos_temas">
+        <item>(VIH) Formas De Prevencion Del Vih</item>
+        <item>(VIH) Formas De Transmision Del Vih</item>
+        <item>(VIH) Uso Correcto Del Condon</item>
+        <item>(VIH) Que Es Vih Y Que Es Sida</item>
+        <item>(VIH) Pruebas De Vih</item>
+        <item>(VIH) Factores De Riesgo De Adquirir Vih</item>
+        <item>(VIH) Percepcion De Riesgo Ante El Vih</item>
+        <item>(VIH) Tratamiento Del Vih</item>
+        <item>(ITS) Informacion De Its</item>
+        <item>(GENERO) Genero</item>
+        <item>(SEXUALIDAD) Orientacion Sexual</item>
+        <item>(GENERO) Identidad De Genero</item>
+        <item>(SEXUALIDAD) Practicas Sexuales</item>
+        <item>(SALUD EMOCIONAL) Autoestima</item>
+        <item>(SALUD EMOCIONAL) Ansiedad</item>
+        <item>(SALUD EMOCIONAL) Depresion</item>
+        <item>(SALUD EMOCIONAL) Suicidio</item>
+        <item>(SALUD EMOCIONAL) Violencia</item>
+        <item>(SALUD SEXUAL) Sexo Seguro</item>
+        <item>(SALUD SEXUAL) Sexo Protegido</item>
+        <item>(SALUD SEXUAL) Uso De Hormonas</item>
+        <item>(SALUD SEXUAL) Cirugias De Reasignacion De Sexo</item>
+        <item>(SALUD SEXUAL) Uso De Liquidos Daninos -aceites, Silicon U Otros-, En Trans</item>
+        <item>(SALUD SEXUAL) Derechos Sexuales</item>
+        <item>(SALUD REPRODUCTIVA) Salud Reproductiva</item>
+        <item>(SALUD REPRODUCTIVA) Planificacion Familiarl</item>
+        <item>(SALUD) Nutricion</item>
+        <item>(SALUD) Higiene Personal</item>
+        <item>(ADICCIONES) Drogo Dependencia</item>
+        <item>(ADICCIONES) Reduccion De Danos</item>
+        <item>(ADICCIONES) Sexo Compulsivo</item>
+        <item>(DERECHOS HUMANOS) Erradicacion Violencia Contra Mujeres</item>
+        <item>(DERECHOS HUMANOS) Trata De Personas</item>
+        <item>(DERECHOS HUMANOS) Reduccion De Estigma Y Discriminacion</item>
+        <item>(DERECHOS HUMANOS) Reduccion De Homofobia</item>
+        <item>(DERECHOS HUMANOS) Reduccion De Transfobia</item>
+        <item>(DERECHOS HUMANOS) Proceso De Colocacion De Denuncias</item>
+        <item>(DERECHOS HUMANOS) Socializacion De Leyes</item>
+        <item>(DERECHOS HUMANOS) Trabajo Sexual</item>
+        <item>(SEGUIMIENTO A PV) Adherencia A Arv</item>
+        <item>(SEGUIMIENTO A PV) Infecciones Oportunistas</item>
+        <item>(SEGUIMIENTO A PV) Arv</item>
+        <item>Referencias</item>
+        <item>Otros A Especificar</item>
+        <item>Actividad De Tamizaje Para Vih Seleccionar Este Tema Para Las Actividades Enfocadas En Realizar Pruebas De Tamizaje Para Vih</item>
+        <item>Actividad De Diagnostico De Its</item>
+    </string-array>
+
+    <string-array name="sub_temas">
+        <item>Tratamiento y Prev. de Nuevas Infecciones:  Diagnóstico Emocional de Ser Positivo</item>
+        <item>Tratamiento y Prev. de Nuevas infecciones y Acceso al Tratamiento y Servicios</item>
+        <item>Tratamiento y Prev de Nuevas infecciones y  Retención en Servicios</item>
+        <item>Empoderamiento de PVV y Relaciones en su Familia y Comunidad</item>
+        <item>Empoderamiento de PVV, Políticas nacionales y Relaciones con Grupos y Redes</item>
+        <item>Derechos Sexuales y Reproductivos, centrado en la decisión de PVV</item>
+        <item>Apoyo Social y Económico</item>
+        <item>Igualdad de Género y Autoestima</item>
+        <item>Promoción y Acceso en Salud</item>
+        <item>Estado Nutricional</item>
+        <item>Mediación de Impacto</item>
+        <item>Derechos Humanos</item>
+        <item>Dependencia y Abuso en Substancia de Drogas y Alcohol</item>
+    </string-array>
+
+    <string-array name="array_clinicas">
+        <item>Clínica ICA, Hospital Rodolfo Robles - D11 D8-03 zona 1</item>
+        <item>Clínica 1, Hospital Nacional de Occidente - Hospital Nacional de Occidente</item>
+        <item>Hospital Nacional de Huehuetenango - Unidad de atención integral, Hospital Nacional de Huehuetenango zona 10 </item>
+    </string-array>
+
+    <string-array name="educadores">
+        <item>Victor Medrano</item>
+        <item>Luis Villatoro</item>
+        <item>Bryan Mazariegos</item>
+        <item>Oliver Racancoj</item>
+        <item>Juana López</item>
+        <item>Flor Pérez</item>
+    </string-array>
+
+    <string-array name="grupos">
+        <item>HSH</item>
+        <item>MTS</item>
+        <item>PVV</item>
+        <item>JRS</item>
+        <item>HRI</item>
+        <item>PPL</item>
+    </string-array>
+    <string-array name="subgrupos">
+        <item>HSH en vía pública</item>
+        <item>HSH en lugares de socialización y/o encuentro</item>
+        <item>HSH Trabajador sexual</item>
+    </string-array>
+    <string-array name="objetivos">
+        <item>Objetivo 1</item>
+        <item>Objetivo 2</item>
+        <item>Objetivo 3</item>
+        <item>Objetivo 4</item>
+    </string-array>
+    <string-array name="array_departamentos">
+        <item>GUATEMALA</item>
+        <item>EL PROGRESO</item>
+        <item>SACATEPÉQUEZ</item>
+        <item>CHIMALTENANGO</item>
+        <item>ESCUINTLA</item>
+        <item>SANTA ROSA</item>
+        <item>SOLOLÁ</item>
+        <item>TOTONICAPÁN</item>
+        <item>QUEZALTENANGO</item>
+        <item>SUCHITEPÉQUEZ</item>
+        <item>RETALHULEU</item>
+        <item>SAN MARCOS</item>
+        <item>HUEHUETENANGO</item>
+        <item>QUICHÉ</item>
+        <item>BAJA VERAPAZ</item>
+        <item>ALTA VERAPAZ</item>
+        <item>PETÉN</item>
+        <item>IZABAL</item>
+        <item>ZACAPA</item>
+        <item>CHIQUIMULA</item>
+        <item>JALAPA</item>
+        <item>JUTIAPA</item>
+    </string-array>
+    <string-array name="array_municipios">
+        <item>Municipios</item>
+        <item>Otros Municipios</item>
+    </string-array>
+    <string-array name="clinicas">
+        <item>UAI "Dr. Isaac Cohen Alcahé" - Quetzaltenango</item>
+        <item>UAI "Las Lagunas, Zona 10" - Huehuetenango</item>
+    </string-array>
+
+    <string name="title_activity_datos_actividad">DatosActividad</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_my_login">BioTasP</string>
+
+    <string name="query">Query</string>
+    <string name="update">Update</string>
+    <string name="idactividad">Max IDActividad</string>
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/main_title"/>
+        
+        <EditText
+            android:id="@+id/txt_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="@string/hint_nombre"
+            android:inputType="textPersonName"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:layout_margin="15dp"/>
+         
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal" >
+
+            <Spinner
+
+                android:id="@+id/spinner_rate"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/array_sexo" />
+            
+			<EditText
+		        android:id="@+id/txt_edad"
+		        android:layout_width="0px"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1"
+		        android:inputType="phone" 
+		        android:hint="@string/hint_edad">
+		    </EditText>
+		    
+        </LinearLayout>
+        
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal" >
+            
+            <Button 
+                android:id="@+id/btn_main_huella"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawSelectorOnTop="true"
+                android:text="@string/main_huella"
+                android:layout_marginTop="10dp" />
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal" >
+            <Spinner
+                    android:id="@+id/spinner_resultado_tvc"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawSelectorOnTop="true"
+                    android:entries="@array/array_tvc" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal" >
+            
+            <Button 
+                android:id="@+id/btn_main_guardar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawSelectorOnTop="true"
+                android:text="@string/main_guardar"
+                android:layout_marginTop="10dp" />
+            
+        </LinearLayout>
+       
+        
+    </LinearLayout>
+
+</RelativeLayout>
