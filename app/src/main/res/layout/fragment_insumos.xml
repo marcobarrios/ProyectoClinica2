@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:background="@color/primary"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textColor="@color/list_divider"
+        android:textStyle="bold"
+        android:text="@string/activity_name_title"
+        android:id="@+id/text_view_name_activity"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="75dp"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textColor="@color/list_divider"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/activity_date_title"
+        android:id="@+id/text_view_date_activity"
+        android:layout_below="@+id/text_view_name_activity"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_text_pacient_code"
+        android:layout_below="@+id/text_view_date_activity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:hint="@string/pacient_code_hint" />
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_horizontal"
+        android:id="@+id/table"
+        android:layout_below="@+id/edit_text_pacient_code">
+
+        <TableRow>
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/spinner_tipo_insumo"
+                android:layout_gravity="left"
+                android:entries="@array/insumos"/>
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="numberDecimal"
+                android:gravity="center_horizontal"
+                android:ems="10"
+                android:id="@+id/edit_text_cantidad"
+                android:hint="@string/amount_hint" />
+        </TableRow>
+
+    </TableLayout>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="125dp"
+        android:inputType="textMultiLine"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/edit_text_observations"
+        android:layout_below="@+id/table"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/observations_hint" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/fingerprint"
+        android:id="@+id/button_register_fingerprint"
+        android:layout_below="@+id/edit_text_observations"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+        android:layout_marginTop="5dp"
+        android:text="Registrar Huella Digital"
+        android:id="@+id/textView"
+        android:layout_below="@+id/button_register_fingerprint"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aceptar"
+        android:background="@color/accent"
+        android:textColor="@color/list_divider"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/button_save_data_insumos" />
+
+</RelativeLayout>

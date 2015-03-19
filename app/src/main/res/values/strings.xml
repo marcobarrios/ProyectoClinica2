@@ -167,6 +167,63 @@
 
     <string name="open_activity">Existe una actividad que no ha sido cerrada</string>
 
+    <string name="titulo_encuesta">CUESTIONARIO PARA EVALUAR LA CALIDAD DE VIDA DE LAS PV</string>
+    <string name="subtitulo_1_encuesta">1.	En cada una de las siguientes preguntas, señale las respuestas que más se adecue al modo en que ha se ha sentido durante los últimos días</string>
+    <string name="grupo_1">ANSIEDAD</string>
+    <string name="txt_pregunta11">¿Ha estado muy nervioso/a?</string>
+    <string name="txt_pregunta12">¿Se ha sentido tranquilo, en calma y en paz?</string>
+    <string name="txt_pregunta13">¿Se ha sentido abrumado o desesperado?</string>
+
+    <string name="grupo_2">DEPRESION</string>
+    <string name="txt_pregunta21">¿Se ha sentido triste y decaído?</string>
+    <string name="txt_pregunta22">¿Ha tomado alcohol para olvidar problemas?</string>
+    <string name="txt_pregunta23">¿Llora y/o se siente irritable o enojado?</string>
+
+    <string name="grupo_3">ESTRES</string>
+    <string name="txt_pregunta31">¿Se ha sentido agotado o cansado?</string>
+    <string name="txt_pregunta32">¿Se le olvidan cosas que han sucedido recientemente, como donde dejo cosas, citas, etc.?</string>
+    <string name="txt_pregunta33">¿Se ha sentido con energía como para hacer las cosas que quería hacer?</string>
+
+    <string name="grupo_4">AUTOESTIMA</string>
+    <string name="txt_pregunta41">¿Se ha sentido discriminado por parte de su familia?</string>
+    <string name="txt_pregunta42">¿Se ha sentido discriminado por parte de amigos u otras personas?</string>
+    <string name="txt_pregunta43">¿Se ha sentido apoyado por parte de su familia u otras personas?</string>
+
+    <string name="subtitulo_2_encuesta">2.	En cada una de las siguientes preguntas, señale la respuesta que mejor se adecue al modo en que le ha ido en sus relaciones familiares/sociales durante los últimos días</string>
+    <string name="grupo_5">COMUNICACION</string>
+    <string name="txt_pregunta51">¿Tiene buena comunicación con su cónyuge?</string>
+    <string name="txt_pregunta52">¿Tiene buena comunicación con su(s) hijo(s)?</string>
+    <string name="txt_pregunta53">¿Tiene buena comunicación con sus padres?</string>
+
+    <string-array name="array_respuestas_pv">
+        <item>Casi Nunca</item>
+        <item>Muy Pocas Veces</item>
+        <item>A Veces</item>
+        <item>A Menudo</item>
+        <item>Casi Siempre</item>
+    </string-array>
+
+    <!--Datos de Fragmento Insumos -->
+    <string name="activity_name_title">Actividad</string>
+    <string name="activity_date_title">Fecha</string>
+    <string name="pacient_code_hint">Ingrese el Código del Paciente</string>
+    <string name="observations_hint">Observaciones</string>
+    <string name="amount_hint">Cantidad</string>
+    <string name="register_fingerprint">Registrar Huella Digital</string>
+    <string name="save_data">Guardar Registro</string>
+
+    <string-array name="insumos">
+        <item>Entrega Material MAC</item>
+        <item>Souvenir</item>
+        <item>Refacción</item>
+        <item>Almuerzo</item>
+        <item>Cena</item>
+        <item>Monetario</item>
+        <item>Paquetes</item>
+        <item>Cupones</item>
+        <item>Tarjetas Telefónicas</item>
+        <item>Otros</item>
+    </string-array>
 
     <string-array name="array_nacionalidad">
         <item>Guatemala</item>
