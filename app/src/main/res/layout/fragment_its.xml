@@ -11,16 +11,11 @@
 
         <TextView
             android:id="@+id/txt_title"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/primary"
-            android:paddingBottom="50dp"
-            android:paddingTop="50dp"
-            android:textColor="@color/list_divider"
-            android:textStyle="bold"
-            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
-            android:gravity="center_horizontal"
-            android:text="@string/main_title"/>
+            android:text="@string/main_title"
+            style="@style/Titulos"/>
+        
+        <View
+		    style="@style/Linea_titulo"/>
         
         <EditText
             android:id="@+id/txt_nombre"
@@ -30,7 +25,7 @@
             android:hint="@string/hint_nombre"
             android:inputType="textPersonName"
             android:textAppearance="?android:attr/textAppearanceLarge" 
-            android:layout_margin="20dp"/>
+            android:layout_margin="15dp"/>
          
         <LinearLayout
             android:layout_width="match_parent"
@@ -58,33 +53,20 @@
 		    
         </LinearLayout>
         
-         <LinearLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
-             android:gravity="center_horizontal"
-            android:orientation="vertical" >
+            android:orientation="horizontal" >
             
-
-
-             <Button
-                 android:layout_width="100dp"
-                 android:layout_height="100dp"
-                 android:background="@drawable/fingerprint"
-                 android:id="@+id/button_register_fingerprint"
-                 android:layout_below="@+id/btn_main_huella"
-                 android:layout_marginTop="20dp"
-                 android:layout_centerHorizontal="true" />
-
-             <TextView
-                 android:layout_width="wrap_content"
-                 android:layout_height="wrap_content"
-                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
-                 android:layout_marginTop="5dp"
-                 android:text="Registrar Huella Digital"
-                 android:id="@+id/textView"
-                 android:layout_below="@+id/btn_main_huella"
-                 android:layout_centerHorizontal="true" />
+            <Button 
+                android:id="@+id/btn_main_huella"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawSelectorOnTop="true"
+                android:text="@string/main_huella"
+                android:layout_marginTop="10dp" />
             
         </LinearLayout>
         
@@ -94,36 +76,30 @@
             android:layout_margin="15dp"
             android:orientation="horizontal" >
             <Spinner
-                    android:id="@+id/spinner_resultado_tvc"
+                    android:id="@+id/spinner_resultado_its"
                     android:layout_width="0px"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:drawSelectorOnTop="true"
-                    android:entries="@array/array_tvc" />
+                    android:entries="@array/array_its" />
         </LinearLayout>
         
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
-            android:gravity="center_horizontal"
             android:orientation="horizontal" >
             
             <Button 
                 android:id="@+id/btn_main_guardar"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:paddingLeft="50dp"
-                android:paddingRight="50dp"
-                android:textStyle="bold"
-                android:textColor="@color/list_divider"
-                android:background="@color/accent"
+                android:layout_weight="1"
                 android:drawSelectorOnTop="true"
                 android:text="@string/main_guardar"
-                android:layout_marginTop="20dp" />
+                android:layout_marginTop="10dp" />
             
-        </LinearLayout>
-       
+        </LinearLayout>        
         
     </LinearLayout>
 

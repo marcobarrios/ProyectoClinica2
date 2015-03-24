@@ -5,7 +5,6 @@ import android.app.DialogFragment;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import marcobarrios.biotasp2.Dialogs.DatePickerFragment;
 import marcobarrios.biotasp2.Dialogs.TimePickerFragment;
@@ -23,7 +22,7 @@ public class ActivityNewActividad extends Activity implements OnDateSelected, On
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_create_activities);
+        setContentView(R.layout.datosactividad_fragment);
 
         getActionBar().setDisplayHomeAsUpEnabled(true);
         getActionBar().setHomeButtonEnabled(true);

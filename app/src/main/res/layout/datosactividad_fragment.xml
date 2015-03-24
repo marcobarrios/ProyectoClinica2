@@ -123,6 +123,9 @@
                 android:layout_width="0px"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="@color/primary_dark"
+                android:textStyle="bold"
+                android:textColor="@color/list_divider"
                 android:layout_marginLeft="16dp"
                 android:text="@string/fecha_actividad"/>
 
@@ -131,6 +134,9 @@
                 android:layout_width="0px"
                 android:layout_marginLeft="16dp"
                 android:layout_height="match_parent"
+                android:background="@color/primary_dark"
+                android:textStyle="bold"
+                android:textColor="@color/list_divider"
                 android:layout_weight="1"
                 android:text="@string/hora_actividad"/>
         </TableRow>

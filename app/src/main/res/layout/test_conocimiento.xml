@@ -1,0 +1,1205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >
+	
+        <TextView
+            android:id="@+id/txt_datosactividad"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:paddingTop="30dp"
+            android:paddingBottom="30dp"
+            android:textColor="@color/list_divider"
+            android:background="@color/primary"
+            android:text="@string/titulo_test"/>
+
+        <!-- PREGUNTA 1 -->
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="15dp"
+	            android:orientation="vertical" >
+	
+	            <TextView
+	                android:id="@+id/txt_pregunta_1"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="2"
+	                android:text="@string/pregunta_1"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textStyle="bold" />
+	            
+	            <ToggleButton
+	                android:id="@+id/tgl_res_1"
+	                android:layout_width="150dp"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center"
+	                android:layout_weight="1"
+	                android:gravity="center_horizontal"
+	                android:textOff="@string/no"
+	                android:textOn="@string/si" />
+
+			</LinearLayout>
+			<!-- FIN PREGUNTA 1 -->
+	        
+	        <!-- PREGUNTA 2 -->
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="15dp"
+	            android:layout_marginLeft="15dp"
+	            android:layout_marginRight="15dp"
+	            android:layout_marginBottom="0dp"
+	            android:orientation="vertical">
+	
+	            <TextView
+	                android:id="@+id/txt_pregunta_2"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/pregunta_2"
+	                android:textStyle="bold" 
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+			</LinearLayout>
+	
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="50dp"
+	            android:layout_marginRight="15dp"
+	            android:layout_marginTop="0dp"
+	            android:orientation="horizontal" >
+	            
+	            <TextView
+	                android:id="@+id/txt_pregunta_2a"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:text="@string/pregunta_2a"
+	                android:layout_weight="2"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	            
+	            <ToggleButton
+		            android:id="@+id/tgl_res_2a"
+		            android:layout_width="150dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:textOn="@string/si"
+		            android:textOff="@string/no" />
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="50dp"
+	            android:layout_marginRight="15dp"
+	            android:layout_marginTop="0dp"
+	            android:orientation="horizontal" >
+	            
+	            <TextView
+	                android:id="@+id/txt_pregunta_2b"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:text="@string/pregunta_2b"
+	                android:layout_weight="2"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	            
+	            <ToggleButton
+		            android:id="@+id/tgl_res_2b"
+		            android:layout_width="150dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:textOn="@string/si"
+		            android:textOff="@string/no" />
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="50dp"
+	            android:layout_marginRight="15dp"
+	            android:layout_marginTop="0dp"
+	            android:orientation="horizontal" >
+	            
+	            <TextView
+	                android:id="@+id/txt_pregunta_2c"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:text="@string/pregunta_2c"
+	                android:layout_weight="2"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	            
+	            <ToggleButton
+		            android:id="@+id/tgl_res_2c"
+		            android:layout_width="150dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:textOn="@string/si"
+		            android:textOff="@string/no" />
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="50dp"
+	            android:layout_marginRight="15dp"
+	            android:layout_marginTop="0dp"
+	            android:orientation="horizontal" >
+	            
+	            <TextView
+	                android:id="@+id/txt_pregunta_2d"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:text="@string/pregunta_2d"
+	                android:layout_weight="2"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	            
+	            <ToggleButton
+		            android:id="@+id/tgl_res_2d"
+		            android:layout_width="150dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:textOn="@string/si"
+		            android:textOff="@string/no" />
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="50dp"
+	            android:layout_marginRight="15dp"
+	            android:layout_marginTop="0dp"
+	            android:orientation="horizontal" >
+	            
+	            <TextView
+	                android:id="@+id/txt_pregunta_2e"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:text="@string/pregunta_2e"
+	                android:layout_weight="2"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	            
+	            <ToggleButton
+		            android:id="@+id/tgl_res_2e"
+		            android:layout_width="150dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:textOn="@string/si"
+		            android:textOff="@string/no" />
+	        </LinearLayout>
+	        
+	        <!-- FIN PREGUNTA 2 -->
+	        
+	        <!-- PREGUNTA 3 -->
+	        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="15dp"
+	            android:orientation="vertical" >
+	
+	            <TextView
+	                android:id="@+id/txt_pregunta_3"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/pregunta_3"
+	                android:textStyle="bold" 
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	            
+	            <ToggleButton
+	                android:id="@+id/tgl_res_3"
+	                android:layout_width="150dp"
+	                android:layout_height="0dip"
+	                android:layout_gravity="center"
+	                android:layout_weight="1"
+	                android:gravity="center_horizontal"
+	                android:textOff="@string/no"
+	                android:textOn="@string/si"
+	                android:onClick="nextQuestion" />
+			</LinearLayout>
+
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="15dp"
+	            android:layout_marginRight="15dp"
+	            android:layout_marginTop="0dp"
+	            android:layout_marginBottom="0dp"
+	            android:orientation="horizontal" >
+	            
+				<RadioGroup
+                android:id="@+id/rdg_res_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/rad_res_3a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/pregunta_3a" />
+
+                <RadioButton
+                    android:id="@+id/rad_res_3b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pregunta_3b" />
+
+                <RadioButton
+                    android:id="@+id/rad_res_3c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pregunta_3c" />
+                
+                <RadioButton
+                    android:id="@+id/rad_res_3d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pregunta_3d" />
+                
+                <RadioButton
+                    android:id="@+id/rad_res_3e"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pregunta_3e" />
+            </RadioGroup>
+	        </LinearLayout>
+	        
+			
+	        <!-- FIN PREGUNTA 3 -->
+	
+	        <!-- PREGUNTA 4 -->
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="15dp"
+	            android:orientation="vertical"
+	            android:id="@+id/layout_pregunta_4" >
+	
+	            <TextView
+	                android:id="@+id/txt_pregunta_4"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/pregunta_4"
+	                android:textStyle="bold" 
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+			</LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="50dp"
+	            android:layout_marginRight="15dp"
+	            android:layout_marginTop="0dp"
+	            android:orientation="horizontal" >
+	            
+	            <TextView
+	                android:id="@+id/txt_pregunta_4a"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:text="@string/pregunta_4a"
+	                android:layout_weight="2"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	            
+	            <ToggleButton
+		            android:id="@+id/tgl_res_4a"
+		            android:layout_width="150dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:textOn="@string/si"
+		            android:textOff="@string/no"/>
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="50dp"
+	            android:layout_marginRight="15dp"
+	            android:layout_marginTop="0dp"
+	            android:orientation="horizontal" >
+	            
+	            <TextView
+	                android:id="@+id/txt_pregunta_4b"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:text="@string/pregunta_4b"
+	                android:layout_weight="2"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	            
+	            <ToggleButton
+		            android:id="@+id/tgl_res_4b"
+		            android:layout_width="150dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:textOn="@string/si"
+		            android:textOff="@string/no"/>
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="50dp"
+	            android:layout_marginRight="15dp"
+	            android:layout_marginTop="0dp"
+	            android:orientation="horizontal" >
+	            
+	            <TextView
+	                android:id="@+id/txt_pregunta_4c"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:text="@string/pregunta_4c"
+	                android:layout_weight="2"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	            
+	            <ToggleButton
+		            android:id="@+id/tgl_res_4c"
+		            android:layout_width="150dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:textOn="@string/si"
+		            android:textOff="@string/no" />
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="50dp"
+	            android:layout_marginRight="15dp"
+	            android:layout_marginTop="0dp"
+	            android:orientation="horizontal" >
+	            
+	            <TextView
+	                android:id="@+id/txt_pregunta_4d"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:text="@string/pregunta_4d"
+	                android:layout_weight="2"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	            
+	            <ToggleButton
+		            android:id="@+id/tgl_res_4d"
+		            android:layout_width="150dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:textOn="@string/si"
+		            android:textOff="@string/no" />
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="50dp"
+	            android:layout_marginRight="15dp"
+	            android:layout_marginTop="0dp"
+	            android:orientation="horizontal" >
+	            
+	            <TextView
+	                android:id="@+id/txt_pregunta_4e"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:text="@string/pregunta_4e"
+	                android:layout_weight="2"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	            
+	            <ToggleButton
+		            android:id="@+id/tgl_res_4e"
+		            android:layout_width="150dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:textOn="@string/si"
+		            android:textOff="@string/no"/>
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="50dp"
+	            android:layout_marginRight="15dp"
+	            android:layout_marginTop="0dp"
+	            android:orientation="horizontal" >
+	            
+	            <TextView
+	                android:id="@+id/txt_pregunta_4f"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:text="@string/pregunta_4f"
+	                android:layout_weight="2"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	            
+	            <ToggleButton
+		            android:id="@+id/tgl_res_4f"
+		            android:layout_width="150dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:textOn="@string/si"
+		            android:textOff="@string/no"/>
+	        </LinearLayout>
+	        <!-- FIN PREGUNTA 4 -->
+	        
+	        <!-- PREGUNTA 5 -->
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="15dp"
+	            android:orientation="vertical" >
+	
+	            <TextView
+	                android:id="@+id/txt_pregunta_5"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/pregunta_5"
+	                android:textStyle="bold" 
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	            
+	            <ToggleButton
+	                android:id="@+id/tgl_res_5"
+	                android:layout_width="150dp"
+	                android:layout_height="0dip"
+	                android:layout_gravity="center"
+	                android:layout_weight="1"
+	                android:gravity="center_horizontal"
+	                android:textOff="@string/no"
+	                android:textOn="@string/si"
+	                android:onClick="nextQuestion" />
+			</LinearLayout>
+
+	
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="50dp"
+	            android:layout_marginRight="15dp"
+	            android:layout_marginTop="0dp"
+	            android:orientation="horizontal" >
+	            
+	            <TextView
+	                android:id="@+id/txt_pregunta_5a"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:text="@string/pregunta_5a"
+	                android:layout_weight="2"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	            
+	            <ToggleButton
+		            android:id="@+id/tgl_res_5a"
+		            android:layout_width="150dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:textOn="@string/si"
+		            android:textOff="@string/no"/>
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="50dp"
+	            android:layout_marginRight="15dp"
+	            android:layout_marginTop="0dp"
+	            android:orientation="horizontal" >
+	            
+	            <TextView
+	                android:id="@+id/txt_pregunta_5b"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:text="@string/pregunta_5b"
+	                android:layout_weight="2"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	            
+	            <ToggleButton
+		            android:id="@+id/tgl_res_5b"
+		            android:layout_width="150dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:textOn="@string/si"
+		            android:textOff="@string/no"/>
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="50dp"
+	            android:layout_marginRight="15dp"
+	            android:layout_marginTop="0dp"
+	            android:orientation="horizontal" >
+	            
+	            <TextView
+	                android:id="@+id/txt_pregunta_5c"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:text="@string/pregunta_5c"
+	                android:layout_weight="2"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	            
+	            <ToggleButton
+		            android:id="@+id/tgl_res_5c"
+		            android:layout_width="150dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:textOn="@string/si"
+		            android:textOff="@string/no"/>
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="50dp"
+	            android:layout_marginRight="15dp"
+	            android:layout_marginTop="0dp"
+	            android:orientation="horizontal" >
+	            
+	            <TextView
+	                android:id="@+id/txt_pregunta_5d"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:text="@string/pregunta_5d"
+	                android:layout_weight="2"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	            
+	            <ToggleButton
+		            android:id="@+id/tgl_res_5d"
+		            android:layout_width="150dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:textOn="@string/si"
+		            android:textOff="@string/no"/>
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="50dp"
+	            android:layout_marginRight="15dp"
+	            android:layout_marginTop="0dp"
+	            android:orientation="horizontal" >
+	            
+	            <TextView
+	                android:id="@+id/txt_pregunta_5e"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:text="@string/pregunta_5e"
+	                android:layout_weight="2"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	            
+	            <ToggleButton
+		            android:id="@+id/tgl_res_5e"
+		            android:layout_width="150dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:textOn="@string/si"
+		            android:textOff="@string/no"/>
+	        </LinearLayout>
+	        
+	        <!-- FIN PREGUNTA 5 -->
+	        
+	        <!-- PREGUNTA 6 -->
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="15dp"
+	            android:orientation="vertical" >
+	
+	            <TextView
+	                android:id="@+id/txt_pregunta_6"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/pregunta_6"
+	                android:textStyle="bold" 
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+			</LinearLayout>
+
+	
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="50dp"
+	            android:layout_marginRight="15dp"
+	            android:layout_marginTop="0dp"
+	            android:orientation="horizontal" >
+	            
+	            <TextView
+	                android:id="@+id/txt_pregunta_6a"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:text="@string/pregunta_6a"
+	                android:layout_weight="2"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	            
+	            <ToggleButton
+		            android:id="@+id/tgl_res_6a"
+		            android:layout_width="150dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:textOn="@string/si"
+		            android:textOff="@string/no"/>
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="50dp"
+	            android:layout_marginRight="15dp"
+	            android:layout_marginTop="0dp"
+	            android:orientation="horizontal" >
+	            
+	            <TextView
+	                android:id="@+id/txt_pregunta_6b"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:text="@string/pregunta_6b"
+	                android:layout_weight="2"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	            
+	            <ToggleButton
+		            android:id="@+id/tgl_res_6b"
+		            android:layout_width="150dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:textOn="@string/si"
+		            android:textOff="@string/no"/>
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="50dp"
+	            android:layout_marginRight="15dp"
+	            android:layout_marginTop="0dp"
+	            android:orientation="horizontal" >
+	            
+	            <TextView
+	                android:id="@+id/txt_pregunta_6c"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:text="@string/pregunta_6c"
+	                android:layout_weight="2"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	            
+	            <ToggleButton
+		            android:id="@+id/tgl_res_6c"
+		            android:layout_width="150dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:textOn="@string/si"
+		            android:textOff="@string/no"/>
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="50dp"
+	            android:layout_marginRight="15dp"
+	            android:layout_marginTop="0dp"
+	            android:orientation="horizontal" >
+	            
+	            <TextView
+	                android:id="@+id/txt_pregunta_6d"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:text="@string/pregunta_6d"
+	                android:layout_weight="2"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	            
+	            <ToggleButton
+		            android:id="@+id/tgl_res_6d"
+		            android:layout_width="150dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:textOn="@string/si"
+		            android:textOff="@string/no"/>
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="50dp"
+	            android:layout_marginRight="15dp"
+	            android:layout_marginTop="0dp"
+	            android:orientation="horizontal" >
+	            
+	            <TextView
+	                android:id="@+id/txt_pregunta_6e"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:text="@string/pregunta_6e"
+	                android:layout_weight="2"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	            
+	            <ToggleButton
+		            android:id="@+id/tgl_res_6e"
+		            android:layout_width="150dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:textOn="@string/si"
+		            android:textOff="@string/no"/>
+	        </LinearLayout>
+	        
+	        <!-- FIN PREGUNTA 6 -->
+	        
+	        <!-- PREGUNTA 7 -->
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="15dp"
+	            android:orientation="vertical" >
+	
+	            <TextView
+	                android:id="@+id/txt_pregunta_7"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/pregunta_7"
+	                android:textStyle="bold" 
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+			</LinearLayout>
+			
+	        <RadioGroup
+                android:id="@+id/rdg_res_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/rad_res_7a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/pregunta_7a" />
+
+                <RadioButton
+                    android:id="@+id/rad_res_7b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pregunta_7b" />
+
+                <RadioButton
+                    android:id="@+id/rad_res_7c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pregunta_7c" />
+                
+                <RadioButton
+                    android:id="@+id/rad_res_7d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pregunta_7d" />
+            </RadioGroup>
+			
+		<!-- FIN PREGUNTA 7 -->
+		
+		<!-- PREGUNTA 8 -->
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="15dp"
+	            android:orientation="vertical" >
+	
+	            <TextView
+	                android:id="@+id/txt_pregunta_8"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/pregunta_8"
+	                android:textStyle="bold" 
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+			</LinearLayout>
+
+	
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="50dp"
+	            android:layout_marginRight="15dp"
+	            android:layout_marginTop="0dp"
+	            android:orientation="horizontal" >
+	            
+	            <TextView
+	                android:id="@+id/txt_pregunta_8a"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:text="@string/pregunta_8a"
+	                android:layout_weight="2"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	            
+	            <ToggleButton
+		            android:id="@+id/tgl_res_8a"
+		            android:layout_width="150dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:textOn="@string/si"
+		            android:textOff="@string/no"/>
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="50dp"
+	            android:layout_marginRight="15dp"
+	            android:layout_marginTop="0dp"
+	            android:orientation="horizontal" >
+	            
+	            <TextView
+	                android:id="@+id/txt_pregunta_8b"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:text="@string/pregunta_8b"
+	                android:layout_weight="2"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	            
+	            <ToggleButton
+		            android:id="@+id/tgl_res_8b"
+		            android:layout_width="150dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:textOn="@string/si"
+		            android:textOff="@string/no"/>
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="50dp"
+	            android:layout_marginRight="15dp"
+	            android:layout_marginTop="0dp"
+	            android:orientation="horizontal" >
+	            
+	            <TextView
+	                android:id="@+id/txt_pregunta_8c"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:text="@string/pregunta_8c"
+	                android:layout_weight="2"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	            
+	            <ToggleButton
+		            android:id="@+id/tgl_res_8c"
+		            android:layout_width="150dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:textOn="@string/si"
+		            android:textOff="@string/no"/>
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="50dp"
+	            android:layout_marginRight="15dp"
+	            android:layout_marginTop="0dp"
+	            android:orientation="horizontal" >
+	            
+	            <TextView
+	                android:id="@+id/txt_pregunta_8d"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:text="@string/pregunta_8d"
+	                android:layout_weight="2"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	            
+	            <ToggleButton
+		            android:id="@+id/tgl_res_8d"
+		            android:layout_width="150dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:textOn="@string/si"
+		            android:textOff="@string/no"/>
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="50dp"
+	            android:layout_marginRight="15dp"
+	            android:layout_marginTop="0dp"
+	            android:orientation="horizontal" >
+	            
+	            <TextView
+	                android:id="@+id/txt_pregunta_8e"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:text="@string/pregunta_8e"
+	                android:layout_weight="2"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	            
+	            <ToggleButton
+		            android:id="@+id/tgl_res_8e"
+		            android:layout_width="150dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:textOn="@string/si"
+		            android:textOff="@string/no"/>
+	        </LinearLayout>
+	        
+	        <!-- FIN PREGUNTA 8 -->
+	        
+	        <!-- PREGUNTA 9 -->
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="15dp"
+	            android:orientation="vertical" >
+	
+	            <TextView
+	                android:id="@+id/txt_pregunta_9"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/pregunta_9"
+	                android:textStyle="bold" 
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+			</LinearLayout>
+			
+	        <RadioGroup
+                android:id="@+id/rdg_res_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/rad_res_9a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/pregunta_9a" />
+
+                <RadioButton
+                    android:id="@+id/rad_res_9b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pregunta_9b" />
+
+                <RadioButton
+                    android:id="@+id/rad_res_9c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pregunta_9c" />
+                
+
+            </RadioGroup>
+			
+		<!-- FIN PREGUNTA 9 -->
+	        
+	        <!-- PREGUNTA 10 -->
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="15dp"
+	            android:orientation="vertical" >
+	
+	            <TextView
+	                android:id="@+id/txt_pregunta_10"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/pregunta_10"
+	                android:textStyle="bold" 
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	            
+	            <ToggleButton
+	                android:id="@+id/tgl_res_10"
+	                android:layout_width="150dp"
+	                android:layout_height="0dip"
+	                android:layout_gravity="center"
+	                android:layout_weight="1"
+	                android:gravity="center_horizontal"
+	                android:textOff="@string/no"
+	                android:textOn="@string/si"
+	                android:onClick="nextQuestion" />
+			</LinearLayout>
+
+	
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="50dp"
+	            android:layout_marginRight="15dp"
+	            android:layout_marginTop="0dp"
+	            android:orientation="horizontal" >
+	            
+	            <TextView
+	                android:id="@+id/txt_pregunta_10a"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:text="@string/pregunta_10a"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="50dp"
+	            android:layout_marginRight="15dp"
+	            android:layout_marginTop="0dp"
+	            android:orientation="horizontal" >
+	            
+	            <TextView
+	                android:id="@+id/txt_pregunta_10b"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:text="@string/pregunta_10b"
+	                android:layout_weight="2"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	            
+	            <ToggleButton
+		            android:id="@+id/tgl_res_10b"
+		            android:layout_width="150dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:textOn="@string/si"
+		            android:textOff="@string/no"/>
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="50dp"
+	            android:layout_marginRight="15dp"
+	            android:layout_marginTop="0dp"
+	            android:orientation="horizontal" >
+	            
+	            <TextView
+	                android:id="@+id/txt_pregunta_10c"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:text="@string/pregunta_10c"
+	                android:layout_weight="2"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	            
+	            <ToggleButton
+		            android:id="@+id/tgl_res_10c"
+		            android:layout_width="150dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:textOn="@string/si"
+		            android:textOff="@string/no"/>
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="50dp"
+	            android:layout_marginRight="15dp"
+	            android:layout_marginTop="0dp"
+	            android:orientation="horizontal" >
+	            
+	            <TextView
+	                android:id="@+id/txt_pregunta_10d"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:text="@string/pregunta_10d"
+	                android:layout_weight="2"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	            
+	            <ToggleButton
+		            android:id="@+id/tgl_res_10d"
+		            android:layout_width="150dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:textOn="@string/si"
+		            android:textOff="@string/no"/>
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="50dp"
+	            android:layout_marginRight="15dp"
+	            android:layout_marginTop="0dp"
+	            android:orientation="horizontal" >
+	            
+	            <TextView
+	                android:id="@+id/txt_pregunta_10e"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:text="@string/pregunta_10e"
+	                android:layout_weight="2"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	            
+	            <ToggleButton
+		            android:id="@+id/tgl_res_10e"
+		            android:layout_width="150dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:textOn="@string/si"
+		            android:textOff="@string/no"/>
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="50dp"
+	            android:layout_marginRight="15dp"
+	            android:layout_marginTop="0dp"
+	            android:orientation="horizontal" >
+	            
+	            <TextView
+	                android:id="@+id/txt_pregunta_10f"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:text="@string/pregunta_10f"
+	                android:layout_weight="2"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	            
+	            <ToggleButton
+		            android:id="@+id/tgl_res_10f"
+		            android:layout_width="150dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:textOn="@string/si"
+		            android:textOff="@string/no"/>
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="50dp"
+	            android:layout_marginRight="15dp"
+	            android:layout_marginTop="0dp"
+	            android:orientation="horizontal" >
+	            
+	            <TextView
+	                android:id="@+id/txt_pregunta_10g"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:text="@string/pregunta_10g"
+	                android:layout_weight="2"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	            
+	            <ToggleButton
+		            android:id="@+id/tgl_res_10g"
+		            android:layout_width="150dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:textOn="@string/si"
+		            android:textOff="@string/no"/>
+	        </LinearLayout>
+	        
+	        <!-- FIN PREGUNTA 10 -->
+	        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="15dp"
+	            android:orientation="horizontal"
+                android:gravity="center_horizontal">
+		        
+		        <Button
+		            android:id="@+id/btn_save_quiz"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+                    android:paddingLeft="50dp"
+                    android:paddingRight="50dp"
+                    android:background="@color/accent"
+                    android:textStyle="bold"
+                    android:textColor="@color/list_divider"
+		            android:text="@string/main_guardar" />
+	        
+	        </LinearLayout>
+		</LinearLayout>
+		
+	</RelativeLayout>
+
+</ScrollView>

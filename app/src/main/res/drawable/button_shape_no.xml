@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_enabled="false" >
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" 
+    		android:shape="rectangle">
+            <corners android:bottomLeftRadius="8dp"
+	             android:bottomRightRadius="8dp"
+	             android:topLeftRadius="8dp"
+	             android:topRightRadius="8dp"/>
+            
+            <solid android:color="#CC8988"/>
+        </shape>
+    </item>
+    
+    <item android:state_pressed="true" >
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" 
+    		android:shape="rectangle">
+            <corners android:bottomLeftRadius="8dp"
+	             android:bottomRightRadius="8dp"
+	             android:topLeftRadius="8dp"
+	             android:topRightRadius="8dp"/>
+            
+            <solid android:color="#D5AFAD"/>
+        </shape>
+    </item>
+    
+    <item android:state_focused="true" >
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" 
+    		android:shape="rectangle">
+            <corners android:bottomLeftRadius="8dp"
+	             android:bottomRightRadius="8dp"
+	             android:topLeftRadius="8dp"
+	             android:topRightRadius="8dp"/>
+            
+            <solid android:color="#A6514F"/>
+        </shape>
+    </item>
+
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" 
+    		android:shape="rectangle">
+            <corners android:bottomLeftRadius="8dp"
+	             android:bottomRightRadius="8dp"
+	             android:topLeftRadius="8dp"
+	             android:topRightRadius="8dp"/>
+    		        
+            
+            <solid android:color="#A6514F"/>
+        </shape>
+    </item>
+    
+</selector>

@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout
+        android:id="@+id/its_n_Fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:text="@string/main_title"
+            style="@style/Titulos"/>
+        
+        <View
+		    style="@style/Linea_titulo"/>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal" >
+			
+            <Button 
+                android:id="@+id/btn_identify_its"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawSelectorOnTop="true"
+                android:text="Identificar"
+                android:layout_marginTop="10dp" 
+                />
+            
+          <EditText
+	            android:id="@+id/txt_ticket_its"
+	            android:layout_width="0px"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:hint="Ingresar Ticket"
+	            android:inputType="textPersonName"
+	            android:textAppearance="?android:attr/textAppearanceLarge" 
+	            />
+            
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal" >
+			
+            
+          <TextView
+	            android:id="@+id/txt_persona_its"
+	            android:layout_width="0px"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:text="Nombre de persona identificada"
+	            android:textAppearance="?android:attr/textAppearanceLarge" 
+	            android:ellipsize="start"
+    			android:gravity="center_horizontal"/>
+            
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal" >
+            
+            <EditText
+	            android:id="@+id/txt_nombre_its"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:hint="@string/hint_nombre"
+	            android:inputType="textPersonName"
+	            android:textAppearance="?android:attr/textAppearanceLarge" 
+	            />
+            
+            <EditText
+	            android:id="@+id/txt_apellido_its"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:hint="@string/hint_apellido"
+	            android:inputType="textPersonName"
+	            android:textAppearance="?android:attr/textAppearanceLarge" 
+	            />
+            
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal" >
+
+            <Spinner
+                android:id="@+id/spinner_nacionalidad_its"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/array_nacionalidad" />
+            
+            <Spinner
+                android:id="@+id/spinner_subgrupo_hsh_its"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/array_subgrupo_hsh"
+                android:visibility="invisible" />
+            
+		</LinearLayout>
+        
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal" >
+
+            <Spinner
+                android:id="@+id/spinner_sexo_its"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/array_sexo" />
+            
+			<EditText
+		        android:id="@+id/txt_fechanac_its"
+		        android:layout_width="0px"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1"
+		        android:focusable="false" 
+		        android:hint="@string/hint_fechanac"
+		        >
+		    </EditText>
+		</LinearLayout>
+		    
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal" >
+        
+            <Spinner
+                android:id="@+id/spinner_departamentos_its"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/array_departamentos" />
+            
+            <Spinner
+                android:id="@+id/spinner_municipios_its"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/array_municipios" />
+                   
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal" >
+        
+            <Spinner
+                android:id="@+id/spinner_motivo_consulta_its"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/motivos_consulta_its" />      
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical"
+            android:id="@+id/somefuckingthing">
+            
+        <EditText
+                android:id="@+id/edt_click_its_1"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:ems="10" 
+                android:focusable="false"
+                android:text="Diagnóstico de ITS 1"
+                android:textStyle="italic">
+
+            </EditText>
+		</LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical"
+			android:id="@+id/layout_its_1"
+			android:visibility="gone">
+            
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal" >
+            
+            <Spinner
+                android:id="@+id/spinner_dx_its_1"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/array_its" />
+            
+            <CheckBox
+            android:id="@+id/chk_tratado_its_1"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tratado_its" />
+		</LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal" >
+        
+            <Spinner
+                android:id="@+id/spinner_med_its_1"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/array_med_its" />
+            
+            <EditText
+		        android:id="@+id/txt_cant_ent_1"
+		        android:layout_width="0px"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1" 
+		        android:hint="Cantidad entregada"
+		        >
+		    </EditText>
+                   
+            
+        </LinearLayout>
+	</LinearLayout>
+	
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical"
+            android:id="@+id/somefuckingthing2">
+            
+        <EditText
+                android:id="@+id/edt_click_its_2"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:ems="10" 
+                android:focusable="false"
+                android:text="Diagnóstico de ITS 2"
+                android:textStyle="italic">
+
+            </EditText>
+		</LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical"
+			android:id="@+id/layout_its_2"
+			android:visibility="gone">
+            
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal" >
+            
+            <Spinner
+                android:id="@+id/spinner_dx_its_2"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/array_its" />
+            
+            <CheckBox
+            android:id="@+id/chk_tratado_its_2"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tratado_its" />
+		</LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal" >
+        
+            <Spinner
+                android:id="@+id/spinner_med_its_2"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/array_med_its" />
+            
+            <EditText
+		        android:id="@+id/txt_cant_ent_2"
+		        android:layout_width="0px"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1" 
+		        android:hint="Cantidad entregada"
+		        >
+		    </EditText>
+                   
+            
+        </LinearLayout>
+	</LinearLayout>
+	
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical"
+            android:id="@+id/somefuckingthing3">
+            
+        <EditText
+                android:id="@+id/edt_click_its_3"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:ems="10" 
+                android:focusable="false"
+                android:text="Diagnóstico de ITS 3"
+                android:textStyle="italic">
+
+            </EditText>
+		</LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical"
+			android:id="@+id/layout_its_3"
+			android:visibility="gone">
+            
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal" >
+            
+            <Spinner
+                android:id="@+id/spinner_dx_its_3"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/array_its" />
+            
+            <CheckBox
+            android:id="@+id/chk_tratado_its_3"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tratado_its" />
+		</LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal" >
+        
+            <Spinner
+                android:id="@+id/spinner_med_its_3"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/array_med_its" />
+            
+            <EditText
+		        android:id="@+id/txt_cant_ent_3"
+		        android:layout_width="0px"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1" 
+		        android:hint="Cantidad entregada"
+		        >
+		    </EditText>
+                   
+            
+        </LinearLayout>
+	</LinearLayout>
+        
+        <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal" >
+        
+            <CheckBox
+            android:id="@+id/chk_tratado_fm_1"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tratado_its_fm" />
+            
+            <CheckBox
+            android:id="@+id/chk_referido_its"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/referido_its" />
+                   
+            
+        </LinearLayout> -->
+        
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal" >
+            
+			<EditText
+		        android:id="@+id/txt_condones_its"
+		        android:layout_width="0px"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1"
+		        android:inputType="number"
+		        android:hint="@string/condones"
+		        >
+		    </EditText>
+		    
+			<EditText
+		        android:id="@+id/txt_lubricantes_its"
+		        android:layout_width="0px"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1"
+		        android:inputType="number"
+		        android:hint="@string/lubricantes"
+		        >
+		    </EditText>
+		    
+			
+		</LinearLayout>
+		
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal" >
+			
+            <EditText
+		        android:id="@+id/txt_impresos_its"
+		        android:layout_width="0px"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1"
+		        android:inputType="number"
+		        android:layout_gravity="fill"
+		        android:hint="@string/impresos"
+		        >
+		    </EditText>
+		    
+			<CheckBox
+            android:id="@+id/chk_lubricantes_tubo_its"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            
+            android:text="@string/lubricantes_tubo" />
+		</LinearLayout>
+
+<!--         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal" >
+		    
+			<CheckBox
+            android:id="@+id/chk_referencia_vih"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/referencia_vih" />
+			
+			<CheckBox
+            android:id="@+id/chk_referencia_its"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/referencia_its" />
+		</LinearLayout> -->
+        
+        
+        <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal" >
+			
+            <Button 
+                android:id="@+id/btn_main_test"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawSelectorOnTop="true"
+                android:text="@string/main_test"
+                android:layout_marginTop="10dp" />
+            
+        </LinearLayout> -->
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal" >
+			
+            <Button 
+                android:id="@+id/btn_main_huella_its"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawSelectorOnTop="true"
+                android:text="@string/main_huella"
+                android:layout_marginTop="10dp" />
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal" >
+			
+            <Button 
+                android:id="@+id/btn_main_guardar_its"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawSelectorOnTop="true"
+                android:text="@string/main_guardar"
+                android:layout_marginTop="10dp" 
+                />
+            
+        </LinearLayout>
+        
+       
+        
+        
+        
+    </LinearLayout>
+    
+        
+
+</RelativeLayout>
+</ScrollView>

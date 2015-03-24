@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+ 	
+        <TextView
+			android:id="@+id/txt_title"
+			android:text="@string/modificar_actividad"
+			style="@style/Titulos"/>
+        
+		<View
+			style="@style/Linea_titulo"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/layout_edit_activity_1">
+        
+        <TextView 
+            android:id="@+id/edit_lugar_actividad"
+            android:text="Lugar"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+        
+        <TextView 
+            android:id="@+id/edit_fecha_actividad"
+            android:text="Fecha"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"  />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/layout_edit_activity_12">
+        
+        <TextView 
+            android:id="@+id/edit_lugar_actividad_t"
+            android:text="Aquí va el lugar de la actividad..."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+        
+        <TextView 
+            android:id="@+id/edit_fecha_actividad_t"
+            android:text="Fecha de la actividad..."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"  />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/layout_edit_activity_2">
+        
+        <TextView 
+            android:id="@+id/edit_participantes_actividad"
+            android:text="Participantes"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+        
+        <TextView 
+            android:id="@+id/edit_condones_actividad"
+            android:text="Condones Demo"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"  />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/layout_edit_activity_22">
+        
+        <TextView 
+            android:id="@+id/edit_participantes_actividad_t"
+            android:text="Total participantes..."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+        
+        <EditText 
+            android:id="@+id/edt_condones_actividad"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" 
+            android:enabled="false" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/layout_edit_activity_3">
+        
+        <TextView 
+            android:id="@+id/edit_observaciones_actividad"
+            android:text="Observaciones"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/layout_edit_activity_4">
+        
+        <EditText
+	        android:id="@+id/edt_observaciones_actividad"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="textMultiLine" 
+	        android:enabled="false" >
+
+    	</EditText>
+    	
+        
+        
+       
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:id="@+id/layout_edit_activity_5">
+        
+        <Button
+        android:id="@+id/btn_mod_activity"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Modificar" 
+        android:background="@drawable/button_shape_no"
+        android:textStyle="bold" 
+        android:textColor="#ffffff"
+        android:layout_weight="1"/>
+        
+        <Button
+        android:id="@+id/btn_save_activity"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Guardar" 
+        android:background="@drawable/button_shape_no"
+        android:textStyle="bold" 
+        android:textColor="#ffffff"
+        android:layout_weight="1"
+        android:enabled="false"/>
+	
+	</LinearLayout>
+	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:id="@+id/layout_edit_activity_5">
+        
+        <Button
+        android:id="@+id/btn_continue_activity"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Continuar Registrando" 
+        android:background="@drawable/button_shape_no"
+        android:textStyle="bold" 
+        android:textColor="#ffffff"
+        android:layout_weight="1"/>
+        
+         <Button
+        android:id="@+id/btn_close_activity"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Terminar Actividad" 
+        android:background="@drawable/button_shape_no"
+        android:textStyle="bold" 
+        android:textColor="#ffffff"
+        android:layout_weight="1"/>
+	
+	</LinearLayout>
+
+</LinearLayout>

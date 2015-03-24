@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="382dp"
+        android:layout_marginTop="14dp" 
+        android:visibility="gone">
+    </ListView>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent">
+        
+    
+    
+    <LinearLayout 
+        android:id="@+id/getData_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:text="Persona identificada"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+        
+        <TextView
+            android:id="@+id/txt_datos_identificacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Identificando..."
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+        <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="15dp"
+	        android:orientation="horizontal"  >
+		    
+		    <Button
+		        android:id="@+id/btn_continuar_identification"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1"
+		        android:text="Continuar con persona identificada" />
+		    
+		    <Button
+		        android:id="@+id/btn_cancelar_identification"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1"
+		        android:text="Cancelar identificación" />
+	    
+		</LinearLayout>
+        
+    </LinearLayout>
+
+    
+
+    </RelativeLayout>
+</LinearLayout>

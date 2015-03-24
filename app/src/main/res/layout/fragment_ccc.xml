@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout
+        android:id="@+id/cccFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:text="@string/main_title"
+            style="@style/Titulos"/>
+        
+        <View
+		    style="@style/Linea_titulo"/>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal" >
+            
+            <EditText
+	            android:id="@+id/txt_nombre"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:hint="@string/hint_nombre"
+	            android:inputType="textPersonName"
+	            android:textAppearance="?android:attr/textAppearanceLarge" 
+	            />
+            
+            <EditText
+	            android:id="@+id/txt_apellido"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:hint="@string/hint_apellido"
+	            android:inputType="textPersonName"
+	            android:textAppearance="?android:attr/textAppearanceLarge" 
+	            />
+            
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal" >
+
+            <Spinner
+                android:id="@+id/spinner_nacionalidad"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/array_nacionalidad" />
+            
+            <Spinner
+                android:id="@+id/spinner_subgrupo_hsh"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/array_subgrupo_hsh"
+                android:visibility="invisible" />
+            
+		</LinearLayout>
+        
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal" >
+
+            <Spinner
+                android:id="@+id/spinner_sexo"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/array_sexo" />
+            
+			<EditText
+		        android:id="@+id/txt_fechanac"
+		        android:layout_width="0px"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1"
+		        android:focusable="false" 
+		        android:hint="@string/hint_fechanac"
+		        >
+		    </EditText>
+		</LinearLayout>
+		    
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal" >
+        
+            <Spinner
+                android:id="@+id/spinner_departamentos"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/array_departamentos" />
+            
+            <Spinner
+                android:id="@+id/spinner_municipios"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/array_municipios" />
+                   
+            
+        </LinearLayout>
+        
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal" >
+            
+			<EditText
+		        android:id="@+id/txt_condones"
+		        android:layout_width="0px"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1"
+		        android:inputType="number"
+		        android:hint="@string/condones"
+		        >
+		    </EditText>
+		    
+			<EditText
+		        android:id="@+id/txt_lubricantes"
+		        android:layout_width="0px"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1"
+		        android:inputType="number"
+		        android:hint="@string/lubricantes"
+		        >
+		    </EditText>
+		    
+			
+		</LinearLayout>
+		
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal" >
+			
+            <EditText
+		        android:id="@+id/txt_impresos"
+		        android:layout_width="0px"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1"
+		        android:inputType="number"
+		        android:layout_gravity="fill"
+		        android:hint="@string/impresos"
+		        >
+		    </EditText>
+		    
+			<CheckBox
+            android:id="@+id/chk_lubricantes_tubo"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            
+            android:text="@string/lubricantes_tubo" />
+		</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal" >
+		    
+			<CheckBox
+            android:id="@+id/chk_referencia_vih"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/referencia_vih" />
+			
+			<CheckBox
+            android:id="@+id/chk_referencia_its"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/referencia_its" />
+		</LinearLayout>
+        
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal" >
+			
+            <Button 
+                android:id="@+id/btn_main_test"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawSelectorOnTop="true"
+                android:text="@string/main_test"
+                android:layout_marginTop="10dp" />
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal" >
+			
+            <Button 
+                android:id="@+id/btn_main_huella"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawSelectorOnTop="true"
+                android:text="@string/main_huella"
+                android:layout_marginTop="10dp" />
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal" >
+			
+            <Button 
+                android:id="@+id/btn_main_guardar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawSelectorOnTop="true"
+                android:text="@string/main_guardar"
+                android:layout_marginTop="10dp" 
+                />
+            
+        </LinearLayout>
+        
+       
+        
+        
+        
+    </LinearLayout>
+    
+        
+
+</RelativeLayout>
+</ScrollView>
