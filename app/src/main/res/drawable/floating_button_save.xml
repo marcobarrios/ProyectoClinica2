@@ -5,4 +5,9 @@
             android:top="12dp"
             android:left="12dp"/>
     <item android:drawable="@drawable/shadow"/>
+    <item android:drawable="@drawable/abc_ic_menu_paste_mtrl_am_alpha"
+        android:right="25dp"
+        android:bottom="25dp"
+        android:top="25dp"
+        android:left="25dp"/>
 </layer-list>
