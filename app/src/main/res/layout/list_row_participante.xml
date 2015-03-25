@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:fab="http://schemas.android.com/apk/res-auto"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:background="#fafafa"
@@ -14,31 +13,30 @@
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
         android:background="@drawable/card_view"
-    	android:id="@+id/layout_list_act">
+    	android:id="@+id/layout_list_part">
     	
 	    <TextView
-	        android:id="@+id/txt_row_title"
+	        android:id="@+id/txt_row_name_participante"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="15dp"
             android:paddingTop="10dp"
             android:paddingBottom="5dp"
             android:textStyle="bold"
-            android:text="Titulo Actividad"
+            android:text="Nombre de Participante"
             android:textColor="#004D40"
 	        android:textAppearance="?android:attr/textAppearanceLarge" />
 	
 	    <TextView
-	        android:id="@+id/txt_row_subtitle"
+	        android:id="@+id/txt_row_dato_participante"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="15dp"
             android:paddingBottom="10dp"
             android:textColor="#00695C"
-            android:layout_below="@+id/txt_row_title"
-            android:text="Fecha Actividad"
+            android:layout_below="@+id/txt_row_name_participante"
+            android:text="Dato Participante"
 	        android:textAppearance="?android:attr/textAppearanceMedium" />
 
 	</RelativeLayout>
-
 </FrameLayout>

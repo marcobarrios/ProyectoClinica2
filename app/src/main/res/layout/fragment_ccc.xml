@@ -5,21 +5,24 @@
     
     <RelativeLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
     
     <LinearLayout
         android:id="@+id/cccFragment"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="fill_parent"
         android:orientation="vertical" >
 
         <TextView
             android:id="@+id/txt_title"
             android:text="@string/main_title"
-            style="@style/Titulos"/>
-        
-        <View
-		    style="@style/Linea_titulo"/>
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:background="@color/primary"
+            android:textColor="@color/list_divider"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:textStyle="bold"/>
         
         <LinearLayout
             android:layout_width="match_parent"
@@ -214,54 +217,60 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:layout_marginLeft="150dp"
+                android:layout_marginRight="150dp"
+                android:textColor="@color/list_divider"
+                android:background="@color/primary_dark"
                 android:drawSelectorOnTop="true"
                 android:text="@string/main_test"
                 android:layout_marginTop="10dp" />
             
         </LinearLayout>
-        
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:orientation="horizontal" >
+            android:layout_margin="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
 			
             <Button 
                 android:id="@+id/btn_main_huella"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/fingerprint"
                 android:drawSelectorOnTop="true"
-                android:text="@string/main_huella"
                 android:layout_marginTop="10dp" />
-            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                android:layout_marginTop="5dp"
+                android:text="Registrar Huella Digital"
+                android:id="@+id/textView"/>
+
         </LinearLayout>
-        
-        <LinearLayout
-            android:layout_width="match_parent"
+
+        <Button
+            android:layout_gravity="right"
+            android:background="@drawable/floating_button_save"
+            android:textColor="@color/list_divider"
+            android:drawSelectorOnTop="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:orientation="horizontal" >
-			
-            <Button 
-                android:id="@+id/btn_main_guardar"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:drawSelectorOnTop="true"
-                android:text="@string/main_guardar"
-                android:layout_marginTop="10dp" 
-                />
-            
-        </LinearLayout>
-        
-       
-        
-        
-        
+            android:id="@+id/btn_main_guardar" />
+
     </LinearLayout>
-    
-        
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="18dp">
+
+        </FrameLayout>
 
 </RelativeLayout>
+
 </ScrollView>

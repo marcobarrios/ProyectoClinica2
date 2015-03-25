@@ -8,10 +8,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
-
-import com.melnykov.fab.FloatingActionButton;
-
 import java.util.ArrayList;
 
 /**
@@ -20,7 +18,7 @@ import java.util.ArrayList;
 public class FragmentActivities extends Fragment {
 
     View v;
-    FloatingActionButton btnNewActividad;
+    Button btnNewActividad;
     private ArrayAdapter<ItemActividad> adapter;
     private ListView activitiesListView;
 
@@ -53,7 +51,7 @@ public class FragmentActivities extends Fragment {
             }
         });
 
-        btnNewActividad = (FloatingActionButton)v.findViewById(R.id.button_new_actividad);
+        btnNewActividad = (Button)v.findViewById(R.id.button_new_actividad);
         btnNewActividad.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

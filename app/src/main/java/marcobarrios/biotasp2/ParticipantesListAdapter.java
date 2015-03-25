@@ -16,14 +16,14 @@ public class ParticipantesListAdapter extends ArrayAdapter<ItemParticipante> {
     private Activity ctx;
 
     public ParticipantesListAdapter(Activity context, List<ItemParticipante> participante) {
-        super(context, R.layout.item_row_participante, participante);
+        super(context, R.layout.list_row_participante, participante);
         this.ctx = context;
     }
 
     @Override
     public View getView(int position, View view, ViewGroup parent) {
         if(view == null) {
-            view = ctx.getLayoutInflater().inflate(R.layout.item_row_participante, parent, false);
+            view = ctx.getLayoutInflater().inflate(R.layout.list_row_participante, parent, false);
         }
         ItemParticipante actual = this.getItem(position);
         inicializarCampos(view, actual);

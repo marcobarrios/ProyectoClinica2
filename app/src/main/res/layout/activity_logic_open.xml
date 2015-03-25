@@ -16,6 +16,8 @@
         android:id="@+id/btn_continueOpenActivity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/primary_dark"
+        android:textColor="@color/list_divider"
         android:layout_marginTop="15dp"
         android:text="Continuar registrando" />
 
@@ -23,6 +25,8 @@
         android:id="@+id/btn_closeOpenActivity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/primary_dark"
+        android:textColor="@color/list_divider"
         android:layout_marginTop="15dp"
         android:text="Cerrar actividad" />
 

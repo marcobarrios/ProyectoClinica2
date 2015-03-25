@@ -399,21 +399,26 @@
                 </TableRow>
             </TableLayout>
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/btn_enviar_cuestionario_pv"
-                android:textColor="@color/list_divider"
-                android:background="@color/accent"
-                android:paddingLeft="25dp"
-                android:paddingRight="20dp"
-                android:text="Enviar y Calificar"
-                android:layout_below="@id/table_encuesta_5"
-                android:layout_marginTop="25dp"
-                android:layout_centerHorizontal="true"/>
         </RelativeLayout>
 
         </RelativeLayout>
     </ScrollView>
 
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="18dp">
+
+        <Button
+            android:layout_gravity="bottom|end"
+            android:background="@drawable/floating_button_save"
+            android:textColor="@color/list_divider"
+            android:drawSelectorOnTop="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_enviar_cuestionario_pv" />
+
+    </FrameLayout>
 </RelativeLayout>

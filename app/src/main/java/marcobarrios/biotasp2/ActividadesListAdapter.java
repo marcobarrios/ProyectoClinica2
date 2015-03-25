@@ -16,14 +16,14 @@ public class ActividadesListAdapter extends ArrayAdapter<ItemActividad> {
     private Activity ctx;
 
     public ActividadesListAdapter(Activity context, List<ItemActividad> actividad) {
-        super(context, R.layout.item_row_actividad, actividad);
+        super(context, R.layout.list_row, actividad);
         this.ctx = context;
     }
 
     @Override
     public View getView(int position, View view, ViewGroup parent) {
         if(view == null) {
-            view = ctx.getLayoutInflater().inflate(R.layout.item_row_actividad, parent, false);
+            view = ctx.getLayoutInflater().inflate(R.layout.list_row, parent, false);
         }
         ItemActividad actual = this.getItem(position);
         inicializarCampos(view, actual);

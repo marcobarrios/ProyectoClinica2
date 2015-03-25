@@ -12,17 +12,20 @@
         <TextView
 			android:id="@+id/txt_title"
 			android:text="@string/modificar_actividad"
-			style="@style/Titulos"/>
-        
-		<View
-			style="@style/Linea_titulo"/>
-        
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:background="@color/primary"
+            android:textColor="@color/list_divider"
+            android:textStyle="bold"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:gravity="center"/>
+
     </LinearLayout>
     
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="50dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:id="@+id/layout_edit_activity_1">
@@ -176,7 +179,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:text="Modificar" 
-        android:background="@drawable/button_shape_no"
+        android:background="@color/primary_dark"
         android:textStyle="bold" 
         android:textColor="#ffffff"
         android:layout_weight="1"/>
@@ -188,8 +191,8 @@
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:text="Guardar" 
-        android:background="@drawable/button_shape_no"
+        android:text="Guardar"
+            android:background="@color/primary_dark"
         android:textStyle="bold" 
         android:textColor="#ffffff"
         android:layout_weight="1"
@@ -203,7 +206,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
-        android:id="@+id/layout_edit_activity_5">
+        android:id="@+id/layout_edit_activity_6">
         
         <Button
         android:id="@+id/btn_continue_activity"
@@ -212,8 +215,8 @@
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:text="Continuar Registrando" 
-        android:background="@drawable/button_shape_no"
+        android:text="Continuar Registrando"
+            android:background="@color/primary_dark"
         android:textStyle="bold" 
         android:textColor="#ffffff"
         android:layout_weight="1"/>
@@ -225,8 +228,8 @@
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:text="Terminar Actividad" 
-        android:background="@drawable/button_shape_no"
+        android:text="Terminar Actividad"
+             android:background="@color/primary_dark"
         android:textStyle="bold" 
         android:textColor="#ffffff"
         android:layout_weight="1"/>

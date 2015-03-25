@@ -101,30 +101,22 @@
                     android:drawSelectorOnTop="true"
                     android:entries="@array/array_tvc" />
         </LinearLayout>
-        
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:gravity="center_horizontal"
-            android:orientation="horizontal" >
-            
-            <Button 
-                android:id="@+id/btn_main_guardar"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:paddingLeft="50dp"
-                android:paddingRight="50dp"
-                android:textStyle="bold"
-                android:textColor="@color/list_divider"
-                android:background="@color/accent"
-                android:drawSelectorOnTop="true"
-                android:text="@string/main_guardar"
-                android:layout_marginTop="20dp" />
-            
-        </LinearLayout>
-       
-        
     </LinearLayout>
 
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="18dp">
+
+        <Button
+            android:id="@+id/btn_main_guardar"
+            android:layout_gravity="bottom|end"
+            android:background="@drawable/floating_button_save"
+            android:drawSelectorOnTop="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
 </RelativeLayout>

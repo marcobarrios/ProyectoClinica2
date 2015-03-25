@@ -28,7 +28,11 @@
             android:id="@+id/txt_title"
             android:text="Persona identificada"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="100dp"
+            android:background="@color/primary"
+            android:textColor="@color/list_divider"
+            android:gravity="center"
+            android:textStyle="bold"/>
         
         <TextView
             android:id="@+id/txt_datos_identificacion"
@@ -47,6 +51,9 @@
 		        android:id="@+id/btn_continuar_identification"
 		        android:layout_width="match_parent"
 		        android:layout_height="match_parent"
+                android:background="@color/primary_dark"
+                android:textColor="@color/list_divider"
+                android:layout_marginRight="10dp"
 		        android:layout_weight="1"
 		        android:text="Continuar con persona identificada" />
 		    
@@ -54,6 +61,9 @@
 		        android:id="@+id/btn_cancelar_identification"
 		        android:layout_width="match_parent"
 		        android:layout_height="match_parent"
+                android:background="@color/primary_dark"
+                android:textColor="@color/list_divider"
+                android:layout_marginLeft="10dp"
 		        android:layout_weight="1"
 		        android:text="Cancelar identificación" />
 	    

@@ -193,7 +193,8 @@
 	            android:textAppearance="?android:attr/textAppearanceLarge" 
 	            android:layout_margin="15dp"/>
    	</LinearLayout>
-   	
+
+
     <LinearLayout 
         	android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -209,6 +210,26 @@
 	            android:hint="@string/hint_observaciones"
 	            android:textAppearance="?android:attr/textAppearanceLarge"
 	            android:layout_margin="15dp"/>
+
+
     </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="18dp">
+
+        <Button
+            android:layout_gravity="bottom|end"
+            android:background="@drawable/floating_button_save"
+            android:textColor="@color/list_divider"
+            android:drawSelectorOnTop="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_save_data_insumos" />
+
+    </FrameLayout>
 
 </LinearLayout>
