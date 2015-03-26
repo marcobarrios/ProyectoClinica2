@@ -45,7 +45,7 @@
         <Button
             android:id="@+id/button_new_actividad"
             android:layout_gravity="bottom|end"
-            android:background="@drawable/floating_button_save"
+            android:background="@drawable/floating_button_add_new_normal"
             android:textColor="@color/list_divider"
             android:drawSelectorOnTop="true"
             android:layout_marginBottom="16dp"

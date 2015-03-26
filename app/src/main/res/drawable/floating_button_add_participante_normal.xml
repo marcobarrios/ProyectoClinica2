@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/shadow"/>
+    <item android:drawable="@drawable/circle_floating_button_normal"
+        android:right="12dp"
+        android:bottom="12dp"
+        android:top="12dp"
+        android:left="12dp"/>
+    <item android:drawable="@drawable/add_user_icon"
+        android:right="25dp"
+        android:bottom="25dp"
+        android:top="25dp"
+        android:left="25dp"/>
+</layer-list>

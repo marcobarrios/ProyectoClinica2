@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    
-    <RelativeLayout
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
     
@@ -27,7 +23,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
+            android:layout_margin="10dp"
             android:orientation="horizontal" >
             
             <EditText
@@ -56,7 +52,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
+            android:layout_margin="10dp"
             android:orientation="horizontal" >
 
             <Spinner
@@ -82,7 +78,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
+            android:layout_margin="10dp"
             android:orientation="horizontal" >
 
             <Spinner
@@ -107,7 +103,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
+            android:layout_margin="10dp"
             android:orientation="horizontal" >
         
             <Spinner
@@ -132,7 +128,7 @@
          <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
+            android:layout_margin="10dp"
             android:orientation="horizontal" >
             
 			<EditText
@@ -161,7 +157,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
+            android:layout_margin="10dp"
             android:orientation="horizontal" >
 			
             <EditText
@@ -187,7 +183,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
+            android:layout_margin="10dp"
             android:orientation="horizontal" >
 		    
 			<CheckBox
@@ -209,7 +205,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
+            android:layout_margin="10dp"
             android:orientation="horizontal" >
 			
             <Button 
@@ -233,8 +229,8 @@
             android:layout_margin="5dp"
             android:gravity="center_horizontal"
             android:orientation="vertical" >
-			
-            <Button 
+
+            <Button
                 android:id="@+id/btn_main_huella"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
@@ -251,16 +247,7 @@
 
         </LinearLayout>
 
-        <Button
-            android:layout_gravity="right"
-            android:background="@drawable/floating_button_save"
-            android:textColor="@color/list_divider"
-            android:drawSelectorOnTop="true"
-            android:layout_marginBottom="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/btn_main_guardar" />
+
 
     </LinearLayout>
 
@@ -269,8 +256,17 @@
             android:layout_height="fill_parent"
             android:layout_margin="18dp">
 
+            <Button
+                android:layout_gravity="right|bottom"
+                android:background="@drawable/floating_button_save_normal"
+                android:textColor="@color/list_divider"
+                android:drawSelectorOnTop="true"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_main_guardar" />
         </FrameLayout>
 
 </RelativeLayout>
 
-</ScrollView>
