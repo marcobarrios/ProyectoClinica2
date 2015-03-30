@@ -17,64 +17,38 @@
             android:id="@+id/txt_title"
             android:text="@string/main_title"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="100dp"
+            android:background="@color/primary"
+            android:gravity="center"
+            android:textColor="@color/list_divider"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:textStyle="bold"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
+            android:layout_margin="5dp"
             android:orientation="horizontal" >
-			
-            <Button 
-                android:id="@+id/btn_identify_its"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:drawSelectorOnTop="true"
-                android:text="Identificar"
-                android:layout_marginTop="10dp" 
-                />
-            
+
           <EditText
 	            android:id="@+id/txt_ticket_its"
 	            android:layout_width="0px"
 	            android:layout_height="match_parent"
 	            android:layout_weight="1"
 	            android:hint="Ingresar Ticket"
+                android:visibility="gone"
 	            android:inputType="textPersonName"
-	            android:textAppearance="?android:attr/textAppearanceLarge" 
-	            />
-            
+	            android:textAppearance="?android:attr/textAppearanceLarge"/>
             
         </LinearLayout>
         
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:orientation="horizontal" >
-			
-            
-          <TextView
-	            android:id="@+id/txt_persona_its"
-	            android:layout_width="0px"
-	            android:layout_height="match_parent"
-	            android:layout_weight="1"
-	            android:text="Nombre de persona identificada"
-	            android:textAppearance="?android:attr/textAppearanceLarge" 
-	            android:ellipsize="start"
-    			android:gravity="center_horizontal"/>
-            
-            
-        </LinearLayout>
-        
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
+            android:layout_margin="10dp"
             android:orientation="horizontal" >
             
-            <EditText
+            <TextView
 	            android:id="@+id/txt_nombre_its"
 	            android:layout_width="wrap_content"
 	            android:layout_height="wrap_content"
@@ -84,7 +58,7 @@
 	            android:textAppearance="?android:attr/textAppearanceLarge" 
 	            />
             
-            <EditText
+            <TextView
 	            android:id="@+id/txt_apellido_its"
 	            android:layout_width="wrap_content"
 	            android:layout_height="wrap_content"
@@ -94,105 +68,40 @@
 	            android:textAppearance="?android:attr/textAppearanceLarge" 
 	            />
             
-            
         </LinearLayout>
         
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:orientation="horizontal" >
-
-            <Spinner
-                android:id="@+id/spinner_nacionalidad_its"
-                android:layout_width="0px"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:drawSelectorOnTop="true"
-                android:entries="@array/array_nacionalidad" />
-            
-            <Spinner
-                android:id="@+id/spinner_subgrupo_hsh_its"
-                android:layout_width="0px"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:drawSelectorOnTop="true"
-                android:entries="@array/array_subgrupo_hsh"
-                android:visibility="invisible" />
-            
-		</LinearLayout>
-        
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:orientation="horizontal" >
-
-            <Spinner
-                android:id="@+id/spinner_sexo_its"
-                android:layout_width="0px"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:drawSelectorOnTop="true"
-                android:entries="@array/array_sexo" />
-            
-			<EditText
-		        android:id="@+id/txt_fechanac_its"
-		        android:layout_width="0px"
-		        android:layout_height="match_parent"
-		        android:layout_weight="1"
-		        android:focusable="false" 
-		        android:hint="@string/hint_fechanac"
-		        >
-		    </EditText>
-		</LinearLayout>
-		    
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:orientation="horizontal" >
-        
-            <Spinner
-                android:id="@+id/spinner_departamentos_its"
-                android:layout_width="0px"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:drawSelectorOnTop="true"
-                android:entries="@array/array_departamentos" />
-            
-            <Spinner
-                android:id="@+id/spinner_municipios_its"
-                android:layout_width="0px"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:drawSelectorOnTop="true"
-                android:entries="@array/array_municipios" />
-                   
-            
-        </LinearLayout>
-        
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:orientation="horizontal" >
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
         
             <Spinner
                 android:id="@+id/spinner_motivo_consulta_its"
-                android:layout_width="0px"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:drawSelectorOnTop="true"
-                android:entries="@array/motivos_consulta_its" />      
+                android:entries="@array/motivos_consulta_its" />
+
+            <Button
+                android:id="@+id/btn_fecha_its"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/primary_dark"
+                android:textStyle="bold"
+                android:textColor="@color/list_divider"
+                android:layout_margin="5dp"
+                android:text="@string/fecha_actividad"/>
             
         </LinearLayout>
-        
+
+        <!-- Diagnostico 1 -->
         <LinearLayout 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
+            android:layout_margin="5dp"
             android:orientation="vertical"
             android:id="@+id/somefuckingthing">
             
@@ -212,7 +121,7 @@
         <LinearLayout 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
+            android:layout_margin="10dp"
             android:orientation="vertical"
 			android:id="@+id/layout_its_1"
 			android:visibility="gone">
@@ -242,7 +151,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
+            android:layout_margin="10dp"
             android:orientation="horizontal" >
         
             <Spinner
@@ -265,11 +174,12 @@
             
         </LinearLayout>
 	</LinearLayout>
-	
+
+        <!-- Diagnostico 2 -->
         <LinearLayout 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
+            android:layout_margin="10dp"
             android:orientation="vertical"
             android:id="@+id/somefuckingthing2">
             
@@ -289,7 +199,7 @@
         <LinearLayout 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
+            android:layout_margin="10dp"
             android:orientation="vertical"
 			android:id="@+id/layout_its_2"
 			android:visibility="gone">
@@ -297,7 +207,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
+            android:layout_margin="10dp"
             android:orientation="horizontal" >
             
             <Spinner
@@ -319,7 +229,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
+            android:layout_margin="10dp"
             android:orientation="horizontal" >
         
             <Spinner
@@ -342,11 +252,12 @@
             
         </LinearLayout>
 	</LinearLayout>
-	
+
+        <!-- Diagnostico 3 -->
         <LinearLayout 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
+            android:layout_margin="10dp"
             android:orientation="vertical"
             android:id="@+id/somefuckingthing3">
             
@@ -366,7 +277,7 @@
         <LinearLayout 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
+            android:layout_margin="10dp"
             android:orientation="vertical"
 			android:id="@+id/layout_its_3"
 			android:visibility="gone">
@@ -374,7 +285,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
+            android:layout_margin="10dp"
             android:orientation="horizontal" >
             
             <Spinner
@@ -396,7 +307,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
+            android:layout_margin="10dp"
             android:orientation="horizontal" >
         
             <Spinner
@@ -415,11 +326,87 @@
 		        android:hint="Cantidad entregada"
 		        >
 		    </EditText>
-                   
-            
+
         </LinearLayout>
 	</LinearLayout>
-        
+
+        <!-- Diagnostico 4 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:id="@+id/somefuckingthing4">
+
+            <EditText
+                android:id="@+id/edt_click_its_4"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:ems="10"
+                android:focusable="false"
+                android:text="Diagnóstico de ITS 4"
+                android:textStyle="italic">
+
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:id="@+id/layout_its_4"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal" >
+
+                <Spinner
+                    android:id="@+id/spinner_dx_its_4"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawSelectorOnTop="true"
+                    android:entries="@array/array_its" />
+
+                <CheckBox
+                    android:id="@+id/chk_tratado_its_4"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/tratado_its" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal" >
+
+                <Spinner
+                    android:id="@+id/spinner_med_its_4"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawSelectorOnTop="true"
+                    android:entries="@array/array_med_its" />
+
+                <EditText
+                    android:id="@+id/txt_cant_ent_4"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Cantidad entregada"
+                    >
+                </EditText>
+
+            </LinearLayout>
+        </LinearLayout>
+
         <!-- <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -442,63 +429,86 @@
                    
             
         </LinearLayout> -->
-        
-         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:orientation="horizontal" >
-            
-			<EditText
-		        android:id="@+id/txt_condones_its"
-		        android:layout_width="0px"
-		        android:layout_height="match_parent"
-		        android:layout_weight="1"
-		        android:inputType="number"
-		        android:hint="@string/condones"
-		        >
-		    </EditText>
-		    
-			<EditText
-		        android:id="@+id/txt_lubricantes_its"
-		        android:layout_width="0px"
-		        android:layout_height="match_parent"
-		        android:layout_weight="1"
-		        android:inputType="number"
-		        android:hint="@string/lubricantes"
-		        >
-		    </EditText>
-		    
-			
-		</LinearLayout>
-		
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
+            android:layout_margin="5dp"
             android:orientation="horizontal" >
-			
-            <EditText
-		        android:id="@+id/txt_impresos_its"
-		        android:layout_width="0px"
-		        android:layout_height="match_parent"
-		        android:layout_weight="1"
-		        android:inputType="number"
-		        android:layout_gravity="fill"
-		        android:hint="@string/impresos"
-		        >
-		    </EditText>
-		    
-			<CheckBox
-            android:id="@+id/chk_lubricantes_tubo_its"
-            android:layout_width="0px"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            
-            android:text="@string/lubricantes_tubo" />
-		</LinearLayout>
 
-<!--         <LinearLayout
+            <EditText
+                android:id="@+id/txt_condones_its_masculino"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:hint="@string/condones_masculino">
+            </EditText>
+
+            <EditText
+                android:id="@+id/txt_condones_its_femenino"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:hint="@string/condones_femenino">
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/txt_lubricantes_its_sachet"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:hint="@string/lubricantes_sachet">
+            </EditText>
+
+            <EditText
+                android:id="@+id/txt_lubricantes_its_tubo"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:hint="@string/lubricantes_tubo">
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/txt_impresos_its"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:layout_gravity="fill"
+                android:hint="@string/impresos"
+                >
+            </EditText>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/comentario_its"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:hint="Comentario"
+            android:inputType="textMultiLine"/>
+
+        <!-- <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
@@ -518,7 +528,6 @@
             android:layout_weight="1"
             android:text="@string/referencia_its" />
 		</LinearLayout> -->
-        
         
         <!-- <LinearLayout
             android:layout_width="match_parent"
@@ -540,17 +549,25 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:orientation="horizontal" >
+            android:layout_margin="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
 			
             <Button 
                 android:id="@+id/btn_main_huella_its"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/fingerprint"
                 android:drawSelectorOnTop="true"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                android:layout_marginTop="1dp"
                 android:text="@string/main_huella"
-                android:layout_marginTop="10dp" />
+                android:id="@+id/textView"/>
             
         </LinearLayout>
 
@@ -563,16 +580,16 @@
         android:layout_height="fill_parent"
         android:layout_margin="18dp">
 
-    <Button
-        android:id="@+id/btn_main_guardar_its"
-        android:layout_gravity="bottom|end"
-        android:background="@drawable/floating_button_save_normal"
-        android:textColor="@color/list_divider"
-        android:drawSelectorOnTop="true"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btn_main_guardar_its"
+            android:layout_gravity="bottom|end"
+            android:background="@drawable/floating_button_save_normal"
+            android:textColor="@color/list_divider"
+            android:drawSelectorOnTop="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
     </FrameLayout>
 
 </RelativeLayout>

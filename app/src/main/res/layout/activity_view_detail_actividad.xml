@@ -19,15 +19,15 @@
 
             <LinearLayout
                 android:layout_width="fill_parent"
-                android:layout_height="250dp"
+                android:layout_height="100dp"
                 android:background="@color/primary"
+                android:gravity="center"
                 android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/txt_title"
                     android:layout_height="wrap_content"
                     android:layout_width="fill_parent"
-                    android:layout_marginTop="20dp"
                     android:textStyle="bold"
                     android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                     android:gravity="center"
@@ -45,49 +45,6 @@
                     android:textColor="@color/abc_primary_text_disable_only_material_dark"
                     android:text="Fecha de la Actividad"/>
 
-                <TextView
-                    android:id="@+id/txt_title2"
-                    android:layout_height="wrap_content"
-                    android:layout_width="fill_parent"
-                    android:layout_marginTop="10dp"
-                    android:textStyle="bold"
-                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium.Inverse"
-                    android:gravity="center"
-                    android:textColor="@color/abc_primary_text_disable_only_material_dark"
-                    android:text="Información Adicional 1"/>
-
-                <TextView
-                    android:id="@+id/txt_title3"
-                    android:layout_height="wrap_content"
-                    android:layout_width="fill_parent"
-                    android:layout_marginTop="10dp"
-                    android:textStyle="bold"
-                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium.Inverse"
-                    android:gravity="center"
-                    android:textColor="@color/abc_primary_text_disable_only_material_dark"
-                    android:text="Información Adicional 2"/>
-
-                <TextView
-                    android:id="@+id/txt_title4"
-                    android:layout_height="wrap_content"
-                    android:layout_width="fill_parent"
-                    android:layout_marginTop="10dp"
-                    android:textStyle="bold"
-                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium.Inverse"
-                    android:gravity="center"
-                    android:textColor="@color/abc_primary_text_disable_only_material_dark"
-                    android:text="Información Adicional 3"/>
-
-                <TextView
-                    android:id="@+id/txt_title5"
-                    android:layout_height="wrap_content"
-                    android:layout_width="fill_parent"
-                    android:layout_marginTop="10dp"
-                    android:textStyle="bold"
-                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium.Inverse"
-                    android:gravity="center"
-                    android:textColor="@color/abc_primary_text_disable_only_material_dark"
-                    android:text="Información Adicional 4"/>
             </LinearLayout>
 
             <Button

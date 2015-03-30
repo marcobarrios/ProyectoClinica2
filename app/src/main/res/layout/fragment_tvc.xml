@@ -2,106 +2,336 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    
-    <LinearLayout
-        android:id="@+id/linearLayout1"
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical" >
+        android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/txt_title"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/primary"
-            android:paddingBottom="50dp"
-            android:paddingTop="50dp"
-            android:textColor="@color/list_divider"
-            android:textStyle="bold"
-            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
-            android:gravity="center_horizontal"
-            android:text="@string/main_title"/>
-        
-        <EditText
-            android:id="@+id/txt_nombre"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:hint="@string/hint_nombre"
-            android:inputType="textPersonName"
-            android:textAppearance="?android:attr/textAppearanceLarge" 
-            android:layout_margin="20dp"/>
-         
         <LinearLayout
+            android:id="@+id/its_n_Fragment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:orientation="horizontal" >
-
-            <Spinner
-
-                android:id="@+id/spinner_rate"
-                android:layout_width="0px"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:drawSelectorOnTop="true"
-                android:entries="@array/array_sexo" />
-            
-			<EditText
-		        android:id="@+id/txt_edad"
-		        android:layout_width="0px"
-		        android:layout_height="match_parent"
-		        android:layout_weight="1"
-		        android:inputType="phone" 
-		        android:hint="@string/hint_edad">
-		    </EditText>
-		    
-        </LinearLayout>
-        
-         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-             android:gravity="center_horizontal"
             android:orientation="vertical" >
-            
 
+            <TextView
+                android:id="@+id/txt_title"
+                android:text="@string/main_title"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/primary"
+                android:gravity="center"
+                android:textColor="@color/list_divider"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                android:textStyle="bold"/>
 
-             <Button
-                 android:layout_width="100dp"
-                 android:layout_height="100dp"
-                 android:background="@drawable/fingerprint"
-                 android:id="@+id/button_register_fingerprint"
-                 android:layout_below="@+id/btn_main_huella"
-                 android:layout_marginTop="20dp"
-                 android:layout_centerHorizontal="true" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal" >
 
-             <TextView
-                 android:layout_width="wrap_content"
-                 android:layout_height="wrap_content"
-                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
-                 android:layout_marginTop="5dp"
-                 android:text="Registrar Huella Digital"
-                 android:id="@+id/textView"
-                 android:layout_below="@+id/btn_main_huella"
-                 android:layout_centerHorizontal="true" />
-            
-        </LinearLayout>
-        
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:orientation="horizontal" >
-            <Spinner
-                    android:id="@+id/spinner_resultado_tvc"
+                <EditText
+                    android:id="@+id/txt_ticket_tvc"
                     android:layout_width="0px"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:hint="Ingresar Ticket"
+                    android:visibility="gone"
+                    android:inputType="textPersonName"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/txt_nombre_tvc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/hint_nombre"
+                    android:inputType="textPersonName"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_apellido_tvc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/hint_apellido"
+                    android:inputType="textPersonName"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinner_motivo_consulta_tvc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawSelectorOnTop="true"
+                    android:entries="@array/motivos_consulta_tvc" />
+
+                <Button
+                    android:id="@+id/btn_fecha_tvc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/primary_dark"
+                    android:textStyle="bold"
+                    android:textColor="@color/list_divider"
+                    android:layout_margin="5dp"
+                    android:text="@string/fecha_actividad"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinner_preba_realizada"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawSelectorOnTop="true"
+                    android:entries="@array/pre_post_prueba" />
+
+                <Spinner
+                    android:id="@+id/spinner_preprueba"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawSelectorOnTop="true"
+                    android:entries="@array/pre_post_prueba" />
+
+                <Spinner
+                    android:id="@+id/spinner_postprueba"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawSelectorOnTop="true"
+                    android:entries="@array/pre_post_prueba" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinner_resultado_tvc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:drawSelectorOnTop="true"
                     android:entries="@array/array_tvc" />
+
+                <Spinner
+                    android:id="@+id/spinner_loconoce"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:drawSelectorOnTop="true"
+                    android:entries="@array/pre_post_prueba" />
+
+                <Spinner
+                    android:id="@+id/spinner_loaprueba"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:drawSelectorOnTop="true"
+                    android:entries="@array/pre_post_prueba" />
+
+            </LinearLayout>
+
+            <!-- <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                android:id="@+id/chk_tratado_fm_1"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/tratado_its_fm" />
+
+                <CheckBox
+                android:id="@+id/chk_referido_its"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/referido_its" />
+
+
+            </LinearLayout> -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/txt_condones_tvc_masculino"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:hint="@string/condones_masculino">
+                </EditText>
+
+                <EditText
+                    android:id="@+id/txt_condones_tvc_femenino"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:hint="@string/condones_femenino">
+                </EditText>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/txt_lubricantes_tvc_sachet"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:hint="@string/lubricantes_sachet">
+            </EditText>
+
+            <EditText
+                android:id="@+id/txt_lubricantes_tvc_tubo"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:hint="@string/lubricantes_tubo">
+            </EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/txt_impresos_tvc"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:layout_gravity="fill"
+                    android:hint="@string/impresos"
+                    >
+                </EditText>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/comentario_tvc"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:hint="Comentario"
+                android:inputType="textMultiLine"/>
+
+            <!--         <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:orientation="horizontal" >
+
+                        <CheckBox
+                        android:id="@+id/chk_referencia_vih"
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/referencia_vih" />
+
+                        <CheckBox
+                        android:id="@+id/chk_referencia_its"
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/referencia_its" />
+                    </LinearLayout> -->
+
+
+            <!-- <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_main_test"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawSelectorOnTop="true"
+                    android:text="@string/main_test"
+                    android:layout_marginTop="10dp" />
+
+            </LinearLayout> -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/btn_main_huella_tvc"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/fingerprint"
+                    android:drawSelectorOnTop="true"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                    android:layout_marginTop="1dp"
+                    android:text="@string/main_huella"
+                    android:id="@+id/textView"/>
+
+            </LinearLayout>
+
         </LinearLayout>
-    </LinearLayout>
+
+    </ScrollView>
 
     <FrameLayout
         android:layout_width="fill_parent"
@@ -109,14 +339,16 @@
         android:layout_margin="18dp">
 
         <Button
-            android:id="@+id/btn_main_guardar"
+            android:id="@+id/btn_main_guardar_tvc"
             android:layout_gravity="bottom|end"
             android:background="@drawable/floating_button_save_normal"
+            android:textColor="@color/list_divider"
             android:drawSelectorOnTop="true"
             android:layout_marginBottom="16dp"
             android:layout_marginEnd="16dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
+            android:layout_height="wrap_content"/>
     </FrameLayout>
+
 </RelativeLayout>
+

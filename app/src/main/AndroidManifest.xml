@@ -18,14 +18,18 @@
 
         <activity
             android:name=".ActivityNewActividad"
-            android:label="Crear Actividad"
-            android:parentActivityName="marcobarrios.biotasp2.MainActivity">
+            android:label="Crear Actividad">
         </activity>
 
         <activity
             android:name=".ActivityDetailActividad"
-            android:label="Detalle de la Actividad"
-            android:parentActivityName="marcobarrios.biotasp2.MainActivity">
+            android:label="Detalle de la Actividad">
+        </activity>
+
+        <activity
+            android:name=".SelectItsTvc"
+            android:label="Seleccionar"
+            android:theme="@style/Base.Theme.AppCompat.Light.Dialog">
         </activity>
 
     </application>

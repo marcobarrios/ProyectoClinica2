@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-android:layout_width="match_parent"
-android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -30,26 +30,25 @@ android:layout_height="match_parent">
 	            android:layout_width="match_parent"
 	            android:layout_height="wrap_content"
 	            android:layout_margin="15dp"
-	            android:orientation="vertical" >
+	            android:orientation="horizontal" >
 	
 	            <TextView
 	                android:id="@+id/txt_pregunta_1"
 	                android:layout_width="fill_parent"
 	                android:layout_height="wrap_content"
-	                android:layout_weight="2"
+	                android:layout_weight="1"
 	                android:text="@string/pregunta_1"
 	                android:textAppearance="?android:attr/textAppearanceMedium"
 	                android:textStyle="bold" />
 	            
-	            <ToggleButton
+	            <Spinner
 	                android:id="@+id/tgl_res_1"
-	                android:layout_width="150dp"
+	                android:layout_width="fill_parent"
 	                android:layout_height="wrap_content"
 	                android:layout_gravity="center"
-	                android:layout_weight="1"
+	                android:layout_weight="2"
 	                android:gravity="center_horizontal"
-	                android:textOff="@string/no"
-	                android:textOn="@string/si" />
+                    android:entries="@array/pre_post_prueba"/>
 
 			</LinearLayout>
 			<!-- FIN PREGUNTA 1 -->
@@ -58,7 +57,7 @@ android:layout_height="match_parent">
 	        <LinearLayout
 	            android:layout_width="match_parent"
 	            android:layout_height="wrap_content"
-	            android:layout_marginTop="15dp"
+	            android:layout_marginTop="0dp"
 	            android:layout_marginLeft="15dp"
 	            android:layout_marginRight="15dp"
 	            android:layout_marginBottom="0dp"
@@ -78,7 +77,7 @@ android:layout_height="match_parent">
 	            android:layout_height="wrap_content"
 	            android:layout_marginLeft="50dp"
 	            android:layout_marginRight="15dp"
-	            android:layout_marginTop="0dp"
+	            android:layout_marginTop="5dp"
 	            android:orientation="horizontal" >
 	            
 	            <TextView
@@ -86,16 +85,15 @@ android:layout_height="match_parent">
 	                android:layout_width="fill_parent"
 	                android:layout_height="wrap_content"
 	                android:text="@string/pregunta_2a"
-	                android:layout_weight="2"
+	                android:layout_weight="1"
 	                android:textAppearance="?android:attr/textAppearanceMedium" />
 	            
-	            <ToggleButton
+	            <Spinner
 		            android:id="@+id/tgl_res_2a"
-		            android:layout_width="150dp"
+		            android:layout_width="fill_parent"
 		            android:layout_height="wrap_content"
-		            android:layout_weight="1"
-		            android:textOn="@string/si"
-		            android:textOff="@string/no" />
+		            android:layout_weight="2"
+                    android:entries="@array/pre_post_prueba" />
 	        </LinearLayout>
 	        
 	        <LinearLayout
@@ -111,16 +109,15 @@ android:layout_height="match_parent">
 	                android:layout_width="fill_parent"
 	                android:layout_height="wrap_content"
 	                android:text="@string/pregunta_2b"
-	                android:layout_weight="2"
+	                android:layout_weight="1"
 	                android:textAppearance="?android:attr/textAppearanceMedium" />
 	            
-	            <ToggleButton
+	            <Spinner
 		            android:id="@+id/tgl_res_2b"
-		            android:layout_width="150dp"
+		            android:layout_width="fill_parent"
 		            android:layout_height="wrap_content"
-		            android:layout_weight="1"
-		            android:textOn="@string/si"
-		            android:textOff="@string/no" />
+		            android:layout_weight="2"
+                    android:entries="@array/pre_post_prueba" />
 	        </LinearLayout>
 	        
 	        <LinearLayout
@@ -136,16 +133,15 @@ android:layout_height="match_parent">
 	                android:layout_width="fill_parent"
 	                android:layout_height="wrap_content"
 	                android:text="@string/pregunta_2c"
-	                android:layout_weight="2"
+	                android:layout_weight="1"
 	                android:textAppearance="?android:attr/textAppearanceMedium" />
 	            
-	            <ToggleButton
+	            <Spinner
 		            android:id="@+id/tgl_res_2c"
-		            android:layout_width="150dp"
+		            android:layout_width="fill_parent"
 		            android:layout_height="wrap_content"
-		            android:layout_weight="1"
-		            android:textOn="@string/si"
-		            android:textOff="@string/no" />
+		            android:layout_weight="2"
+                    android:entries="@array/pre_post_prueba" />
 	        </LinearLayout>
 	        
 	        <LinearLayout
@@ -161,16 +157,15 @@ android:layout_height="match_parent">
 	                android:layout_width="fill_parent"
 	                android:layout_height="wrap_content"
 	                android:text="@string/pregunta_2d"
-	                android:layout_weight="2"
+	                android:layout_weight="1"
 	                android:textAppearance="?android:attr/textAppearanceMedium" />
 	            
-	            <ToggleButton
+	            <Spinner
 		            android:id="@+id/tgl_res_2d"
-		            android:layout_width="150dp"
+		            android:layout_width="fill_parent"
 		            android:layout_height="wrap_content"
-		            android:layout_weight="1"
-		            android:textOn="@string/si"
-		            android:textOff="@string/no" />
+		            android:layout_weight="2"
+                    android:entries="@array/pre_post_prueba"/>
 	        </LinearLayout>
 	        
 	        <LinearLayout
@@ -186,16 +181,15 @@ android:layout_height="match_parent">
 	                android:layout_width="fill_parent"
 	                android:layout_height="wrap_content"
 	                android:text="@string/pregunta_2e"
-	                android:layout_weight="2"
+	                android:layout_weight="1"
 	                android:textAppearance="?android:attr/textAppearanceMedium" />
 	            
-	            <ToggleButton
+	            <Spinner
 		            android:id="@+id/tgl_res_2e"
-		            android:layout_width="150dp"
+		            android:layout_width="fill_parent"
 		            android:layout_height="wrap_content"
-		            android:layout_weight="1"
-		            android:textOn="@string/si"
-		            android:textOff="@string/no" />
+		            android:layout_weight="2"
+                    android:entries="@array/pre_post_prueba"/>
 	        </LinearLayout>
 	        
 	        <!-- FIN PREGUNTA 2 -->
@@ -206,26 +200,25 @@ android:layout_height="match_parent">
 	            android:layout_width="match_parent"
 	            android:layout_height="wrap_content"
 	            android:layout_margin="15dp"
-	            android:orientation="vertical" >
+	            android:orientation="horizontal" >
 	
 	            <TextView
 	                android:id="@+id/txt_pregunta_3"
 	                android:layout_width="wrap_content"
 	                android:layout_height="wrap_content"
 	                android:text="@string/pregunta_3"
+                    android:layout_weight="1"
 	                android:textStyle="bold" 
 	                android:textAppearance="?android:attr/textAppearanceMedium" />
 	            
-	            <ToggleButton
+	            <Spinner
 	                android:id="@+id/tgl_res_3"
-	                android:layout_width="150dp"
-	                android:layout_height="0dip"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
 	                android:layout_gravity="center"
-	                android:layout_weight="1"
+	                android:layout_weight="2"
 	                android:gravity="center_horizontal"
-	                android:textOff="@string/no"
-	                android:textOn="@string/si"
-	                android:onClick="nextQuestion" />
+                    android:entries="@array/pre_post_prueba" />
 			</LinearLayout>
 
 	        <LinearLayout
@@ -308,16 +301,15 @@ android:layout_height="match_parent">
 	                android:layout_width="fill_parent"
 	                android:layout_height="wrap_content"
 	                android:text="@string/pregunta_4a"
-	                android:layout_weight="2"
+	                android:layout_weight="1"
 	                android:textAppearance="?android:attr/textAppearanceMedium" />
 	            
-	            <ToggleButton
+	            <Spinner
 		            android:id="@+id/tgl_res_4a"
-		            android:layout_width="150dp"
+		            android:layout_width="fill_parent"
 		            android:layout_height="wrap_content"
-		            android:layout_weight="1"
-		            android:textOn="@string/si"
-		            android:textOff="@string/no"/>
+		            android:layout_weight="2"
+                    android:entries="@array/pre_post_prueba"/>
 	        </LinearLayout>
 	        
 	        <LinearLayout
@@ -333,16 +325,15 @@ android:layout_height="match_parent">
 	                android:layout_width="fill_parent"
 	                android:layout_height="wrap_content"
 	                android:text="@string/pregunta_4b"
-	                android:layout_weight="2"
+	                android:layout_weight="1"
 	                android:textAppearance="?android:attr/textAppearanceMedium" />
 	            
-	            <ToggleButton
+	            <Spinner
 		            android:id="@+id/tgl_res_4b"
-		            android:layout_width="150dp"
+		            android:layout_width="fill_parent"
 		            android:layout_height="wrap_content"
-		            android:layout_weight="1"
-		            android:textOn="@string/si"
-		            android:textOff="@string/no"/>
+		            android:layout_weight="2"
+                    android:entries="@array/pre_post_prueba"/>
 	        </LinearLayout>
 	        
 	        <LinearLayout
@@ -358,16 +349,15 @@ android:layout_height="match_parent">
 	                android:layout_width="fill_parent"
 	                android:layout_height="wrap_content"
 	                android:text="@string/pregunta_4c"
-	                android:layout_weight="2"
+	                android:layout_weight="1"
 	                android:textAppearance="?android:attr/textAppearanceMedium" />
 	            
-	            <ToggleButton
+	            <Spinner
 		            android:id="@+id/tgl_res_4c"
-		            android:layout_width="150dp"
+		            android:layout_width="fill_parent"
 		            android:layout_height="wrap_content"
-		            android:layout_weight="1"
-		            android:textOn="@string/si"
-		            android:textOff="@string/no" />
+		            android:layout_weight="2"
+                    android:entries="@array/pre_post_prueba" />
 	        </LinearLayout>
 	        
 	        <LinearLayout
@@ -383,16 +373,15 @@ android:layout_height="match_parent">
 	                android:layout_width="fill_parent"
 	                android:layout_height="wrap_content"
 	                android:text="@string/pregunta_4d"
-	                android:layout_weight="2"
+	                android:layout_weight="1"
 	                android:textAppearance="?android:attr/textAppearanceMedium" />
 	            
-	            <ToggleButton
+	            <Spinner
 		            android:id="@+id/tgl_res_4d"
-		            android:layout_width="150dp"
+		            android:layout_width="fill_parent"
 		            android:layout_height="wrap_content"
-		            android:layout_weight="1"
-		            android:textOn="@string/si"
-		            android:textOff="@string/no" />
+		            android:layout_weight="2"
+		            android:entries="@array/pre_post_prueba"/>
 	        </LinearLayout>
 	        
 	        <LinearLayout
@@ -408,16 +397,15 @@ android:layout_height="match_parent">
 	                android:layout_width="fill_parent"
 	                android:layout_height="wrap_content"
 	                android:text="@string/pregunta_4e"
-	                android:layout_weight="2"
+	                android:layout_weight="1"
 	                android:textAppearance="?android:attr/textAppearanceMedium" />
 	            
-	            <ToggleButton
+	            <Spinner
 		            android:id="@+id/tgl_res_4e"
-		            android:layout_width="150dp"
+		            android:layout_width="fill_parent"
 		            android:layout_height="wrap_content"
-		            android:layout_weight="1"
-		            android:textOn="@string/si"
-		            android:textOff="@string/no"/>
+		            android:layout_weight="2"
+                    android:entries="@array/pre_post_prueba"/>
 	        </LinearLayout>
 	        
 	        <LinearLayout
@@ -433,16 +421,15 @@ android:layout_height="match_parent">
 	                android:layout_width="fill_parent"
 	                android:layout_height="wrap_content"
 	                android:text="@string/pregunta_4f"
-	                android:layout_weight="2"
+	                android:layout_weight="1"
 	                android:textAppearance="?android:attr/textAppearanceMedium" />
 	            
-	            <ToggleButton
+	            <Spinner
 		            android:id="@+id/tgl_res_4f"
-		            android:layout_width="150dp"
+		            android:layout_width="fill_parent"
 		            android:layout_height="wrap_content"
-		            android:layout_weight="1"
-		            android:textOn="@string/si"
-		            android:textOff="@string/no"/>
+		            android:layout_weight="2"
+                    android:entries="@array/pre_post_prueba"/>
 	        </LinearLayout>
 	        <!-- FIN PREGUNTA 4 -->
 	        
@@ -461,16 +448,14 @@ android:layout_height="match_parent">
 	                android:textStyle="bold" 
 	                android:textAppearance="?android:attr/textAppearanceMedium" />
 	            
-	            <ToggleButton
+	            <Spinner
 	                android:id="@+id/tgl_res_5"
 	                android:layout_width="150dp"
 	                android:layout_height="0dip"
 	                android:layout_gravity="center"
 	                android:layout_weight="1"
 	                android:gravity="center_horizontal"
-	                android:textOff="@string/no"
-	                android:textOn="@string/si"
-	                android:onClick="nextQuestion" />
+                    android:entries="@array/pre_post_prueba" />
 			</LinearLayout>
 
 	
@@ -487,16 +472,15 @@ android:layout_height="match_parent">
 	                android:layout_width="fill_parent"
 	                android:layout_height="wrap_content"
 	                android:text="@string/pregunta_5a"
-	                android:layout_weight="2"
+	                android:layout_weight="1"
 	                android:textAppearance="?android:attr/textAppearanceMedium" />
 	            
-	            <ToggleButton
+	            <Spinner
 		            android:id="@+id/tgl_res_5a"
-		            android:layout_width="150dp"
+		            android:layout_width="fill_parent"
 		            android:layout_height="wrap_content"
-		            android:layout_weight="1"
-		            android:textOn="@string/si"
-		            android:textOff="@string/no"/>
+		            android:layout_weight="2"
+                    android:entries="@array/pre_post_prueba"/>
 	        </LinearLayout>
 	        
 	        <LinearLayout
@@ -512,16 +496,15 @@ android:layout_height="match_parent">
 	                android:layout_width="fill_parent"
 	                android:layout_height="wrap_content"
 	                android:text="@string/pregunta_5b"
-	                android:layout_weight="2"
+	                android:layout_weight="1"
 	                android:textAppearance="?android:attr/textAppearanceMedium" />
 	            
-	            <ToggleButton
+	            <Spinner
 		            android:id="@+id/tgl_res_5b"
-		            android:layout_width="150dp"
+		            android:layout_width="fill_parent"
 		            android:layout_height="wrap_content"
-		            android:layout_weight="1"
-		            android:textOn="@string/si"
-		            android:textOff="@string/no"/>
+		            android:layout_weight="2"
+                    android:entries="@array/pre_post_prueba"/>
 	        </LinearLayout>
 	        
 	        <LinearLayout
@@ -537,16 +520,15 @@ android:layout_height="match_parent">
 	                android:layout_width="fill_parent"
 	                android:layout_height="wrap_content"
 	                android:text="@string/pregunta_5c"
-	                android:layout_weight="2"
+	                android:layout_weight="1"
 	                android:textAppearance="?android:attr/textAppearanceMedium" />
 	            
-	            <ToggleButton
+	            <Spinner
 		            android:id="@+id/tgl_res_5c"
-		            android:layout_width="150dp"
+		            android:layout_width="fill_parent"
 		            android:layout_height="wrap_content"
-		            android:layout_weight="1"
-		            android:textOn="@string/si"
-		            android:textOff="@string/no"/>
+		            android:layout_weight="2"
+                    android:entries="@array/pre_post_prueba"/>
 	        </LinearLayout>
 	        
 	        <LinearLayout
@@ -562,16 +544,15 @@ android:layout_height="match_parent">
 	                android:layout_width="fill_parent"
 	                android:layout_height="wrap_content"
 	                android:text="@string/pregunta_5d"
-	                android:layout_weight="2"
+	                android:layout_weight="1"
 	                android:textAppearance="?android:attr/textAppearanceMedium" />
 	            
-	            <ToggleButton
+	            <Spinner
 		            android:id="@+id/tgl_res_5d"
-		            android:layout_width="150dp"
+		            android:layout_width="fill_parent"
 		            android:layout_height="wrap_content"
-		            android:layout_weight="1"
-		            android:textOn="@string/si"
-		            android:textOff="@string/no"/>
+		            android:layout_weight="2"
+                    android:entries="@array/pre_post_prueba"/>
 	        </LinearLayout>
 	        
 	        <LinearLayout
@@ -587,16 +568,15 @@ android:layout_height="match_parent">
 	                android:layout_width="fill_parent"
 	                android:layout_height="wrap_content"
 	                android:text="@string/pregunta_5e"
-	                android:layout_weight="2"
+	                android:layout_weight="1"
 	                android:textAppearance="?android:attr/textAppearanceMedium" />
 	            
-	            <ToggleButton
+	            <Spinner
 		            android:id="@+id/tgl_res_5e"
-		            android:layout_width="150dp"
+		            android:layout_width="fill_parent"
 		            android:layout_height="wrap_content"
-		            android:layout_weight="1"
-		            android:textOn="@string/si"
-		            android:textOff="@string/no"/>
+		            android:layout_weight="2"
+                    android:entries="@array/pre_post_prueba"/>
 	        </LinearLayout>
 	        
 	        <!-- FIN PREGUNTA 5 -->
@@ -631,16 +611,15 @@ android:layout_height="match_parent">
 	                android:layout_width="fill_parent"
 	                android:layout_height="wrap_content"
 	                android:text="@string/pregunta_6a"
-	                android:layout_weight="2"
+	                android:layout_weight="1"
 	                android:textAppearance="?android:attr/textAppearanceMedium" />
 	            
-	            <ToggleButton
+	            <Spinner
 		            android:id="@+id/tgl_res_6a"
-		            android:layout_width="150dp"
+		            android:layout_width="fill_parent"
 		            android:layout_height="wrap_content"
-		            android:layout_weight="1"
-		            android:textOn="@string/si"
-		            android:textOff="@string/no"/>
+		            android:layout_weight="2"
+                    android:entries="@array/pre_post_prueba"/>
 	        </LinearLayout>
 	        
 	        <LinearLayout
@@ -656,16 +635,15 @@ android:layout_height="match_parent">
 	                android:layout_width="fill_parent"
 	                android:layout_height="wrap_content"
 	                android:text="@string/pregunta_6b"
-	                android:layout_weight="2"
+	                android:layout_weight="1"
 	                android:textAppearance="?android:attr/textAppearanceMedium" />
 	            
-	            <ToggleButton
+	            <Spinner
 		            android:id="@+id/tgl_res_6b"
-		            android:layout_width="150dp"
+		            android:layout_width="fill_parent"
 		            android:layout_height="wrap_content"
-		            android:layout_weight="1"
-		            android:textOn="@string/si"
-		            android:textOff="@string/no"/>
+		            android:layout_weight="2"
+                    android:entries="@array/pre_post_prueba"/>
 	        </LinearLayout>
 	        
 	        <LinearLayout
@@ -681,16 +659,15 @@ android:layout_height="match_parent">
 	                android:layout_width="fill_parent"
 	                android:layout_height="wrap_content"
 	                android:text="@string/pregunta_6c"
-	                android:layout_weight="2"
+	                android:layout_weight="1"
 	                android:textAppearance="?android:attr/textAppearanceMedium" />
 	            
-	            <ToggleButton
+	            <Spinner
 		            android:id="@+id/tgl_res_6c"
-		            android:layout_width="150dp"
+		            android:layout_width="fill_parent"
 		            android:layout_height="wrap_content"
-		            android:layout_weight="1"
-		            android:textOn="@string/si"
-		            android:textOff="@string/no"/>
+		            android:layout_weight="2"
+                    android:entries="@array/pre_post_prueba"/>
 	        </LinearLayout>
 	        
 	        <LinearLayout
@@ -706,16 +683,15 @@ android:layout_height="match_parent">
 	                android:layout_width="fill_parent"
 	                android:layout_height="wrap_content"
 	                android:text="@string/pregunta_6d"
-	                android:layout_weight="2"
+	                android:layout_weight="1"
 	                android:textAppearance="?android:attr/textAppearanceMedium" />
 	            
-	            <ToggleButton
+	            <Spinner
 		            android:id="@+id/tgl_res_6d"
-		            android:layout_width="150dp"
+		            android:layout_width="fill_parent"
 		            android:layout_height="wrap_content"
-		            android:layout_weight="1"
-		            android:textOn="@string/si"
-		            android:textOff="@string/no"/>
+		            android:layout_weight="2"
+                    android:entries="@array/pre_post_prueba"/>
 	        </LinearLayout>
 	        
 	        <LinearLayout
@@ -731,16 +707,15 @@ android:layout_height="match_parent">
 	                android:layout_width="fill_parent"
 	                android:layout_height="wrap_content"
 	                android:text="@string/pregunta_6e"
-	                android:layout_weight="2"
+	                android:layout_weight="1"
 	                android:textAppearance="?android:attr/textAppearanceMedium" />
 	            
-	            <ToggleButton
+	            <Spinner
 		            android:id="@+id/tgl_res_6e"
-		            android:layout_width="150dp"
+		            android:layout_width="fill_parent"
 		            android:layout_height="wrap_content"
-		            android:layout_weight="1"
-		            android:textOn="@string/si"
-		            android:textOff="@string/no"/>
+		            android:layout_weight="2"
+                    android:entries="@array/pre_post_prueba"/>
 	        </LinearLayout>
 	        
 	        <!-- FIN PREGUNTA 6 -->
@@ -824,16 +799,15 @@ android:layout_height="match_parent">
 	                android:layout_width="fill_parent"
 	                android:layout_height="wrap_content"
 	                android:text="@string/pregunta_8a"
-	                android:layout_weight="2"
+	                android:layout_weight="1"
 	                android:textAppearance="?android:attr/textAppearanceMedium" />
 	            
-	            <ToggleButton
+	            <Spinner
 		            android:id="@+id/tgl_res_8a"
-		            android:layout_width="150dp"
+		            android:layout_width="fill_parent"
 		            android:layout_height="wrap_content"
-		            android:layout_weight="1"
-		            android:textOn="@string/si"
-		            android:textOff="@string/no"/>
+		            android:layout_weight="2"
+                    android:entries="@array/pre_post_prueba"/>
 	        </LinearLayout>
 	        
 	        <LinearLayout
@@ -849,16 +823,15 @@ android:layout_height="match_parent">
 	                android:layout_width="fill_parent"
 	                android:layout_height="wrap_content"
 	                android:text="@string/pregunta_8b"
-	                android:layout_weight="2"
+	                android:layout_weight="1"
 	                android:textAppearance="?android:attr/textAppearanceMedium" />
 	            
-	            <ToggleButton
+	            <Spinner
 		            android:id="@+id/tgl_res_8b"
-		            android:layout_width="150dp"
+		            android:layout_width="fill_parent"
 		            android:layout_height="wrap_content"
-		            android:layout_weight="1"
-		            android:textOn="@string/si"
-		            android:textOff="@string/no"/>
+		            android:layout_weight="2"
+                    android:entries="@array/pre_post_prueba"/>
 	        </LinearLayout>
 	        
 	        <LinearLayout
@@ -874,16 +847,15 @@ android:layout_height="match_parent">
 	                android:layout_width="fill_parent"
 	                android:layout_height="wrap_content"
 	                android:text="@string/pregunta_8c"
-	                android:layout_weight="2"
+	                android:layout_weight="1"
 	                android:textAppearance="?android:attr/textAppearanceMedium" />
 	            
-	            <ToggleButton
+	            <Spinner
 		            android:id="@+id/tgl_res_8c"
-		            android:layout_width="150dp"
+		            android:layout_width="fill_parent"
 		            android:layout_height="wrap_content"
-		            android:layout_weight="1"
-		            android:textOn="@string/si"
-		            android:textOff="@string/no"/>
+		            android:layout_weight="2"
+		            android:entries="@array/pre_post_prueba"/>
 	        </LinearLayout>
 	        
 	        <LinearLayout
@@ -899,16 +871,15 @@ android:layout_height="match_parent">
 	                android:layout_width="fill_parent"
 	                android:layout_height="wrap_content"
 	                android:text="@string/pregunta_8d"
-	                android:layout_weight="2"
+	                android:layout_weight="1"
 	                android:textAppearance="?android:attr/textAppearanceMedium" />
 	            
-	            <ToggleButton
+	            <Spinner
 		            android:id="@+id/tgl_res_8d"
-		            android:layout_width="150dp"
+		            android:layout_width="fill_parent"
 		            android:layout_height="wrap_content"
-		            android:layout_weight="1"
-		            android:textOn="@string/si"
-		            android:textOff="@string/no"/>
+		            android:layout_weight="2"
+                    android:entries="@array/pre_post_prueba"/>
 	        </LinearLayout>
 	        
 	        <LinearLayout
@@ -924,16 +895,15 @@ android:layout_height="match_parent">
 	                android:layout_width="fill_parent"
 	                android:layout_height="wrap_content"
 	                android:text="@string/pregunta_8e"
-	                android:layout_weight="2"
+	                android:layout_weight="1"
 	                android:textAppearance="?android:attr/textAppearanceMedium" />
 	            
-	            <ToggleButton
+	            <Spinner
 		            android:id="@+id/tgl_res_8e"
-		            android:layout_width="150dp"
+		            android:layout_width="fill_parent"
 		            android:layout_height="wrap_content"
-		            android:layout_weight="1"
-		            android:textOn="@string/si"
-		            android:textOff="@string/no"/>
+		            android:layout_weight="2"
+                    android:entries="@array/pre_post_prueba"/>
 	        </LinearLayout>
 	        
 	        <!-- FIN PREGUNTA 8 -->
@@ -998,19 +968,16 @@ android:layout_height="match_parent">
 	                android:textStyle="bold" 
 	                android:textAppearance="?android:attr/textAppearanceMedium" />
 	            
-	            <ToggleButton
+	            <Spinner
 	                android:id="@+id/tgl_res_10"
 	                android:layout_width="150dp"
 	                android:layout_height="0dip"
 	                android:layout_gravity="center"
 	                android:layout_weight="1"
 	                android:gravity="center_horizontal"
-	                android:textOff="@string/no"
-	                android:textOn="@string/si"
-	                android:onClick="nextQuestion" />
+                    android:entries="@array/pre_post_prueba" />
 			</LinearLayout>
 
-	
 	        <LinearLayout
 	            android:layout_width="match_parent"
 	            android:layout_height="wrap_content"
@@ -1040,16 +1007,15 @@ android:layout_height="match_parent">
 	                android:layout_width="fill_parent"
 	                android:layout_height="wrap_content"
 	                android:text="@string/pregunta_10b"
-	                android:layout_weight="2"
+	                android:layout_weight="1"
 	                android:textAppearance="?android:attr/textAppearanceMedium" />
 	            
-	            <ToggleButton
+	            <Spinner
 		            android:id="@+id/tgl_res_10b"
-		            android:layout_width="150dp"
+		            android:layout_width="fill_parent"
 		            android:layout_height="wrap_content"
-		            android:layout_weight="1"
-		            android:textOn="@string/si"
-		            android:textOff="@string/no"/>
+		            android:layout_weight="2"
+		            android:entries="@array/pre_post_prueba"/>
 	        </LinearLayout>
 	        
 	        <LinearLayout
@@ -1065,16 +1031,15 @@ android:layout_height="match_parent">
 	                android:layout_width="fill_parent"
 	                android:layout_height="wrap_content"
 	                android:text="@string/pregunta_10c"
-	                android:layout_weight="2"
+	                android:layout_weight="1"
 	                android:textAppearance="?android:attr/textAppearanceMedium" />
 	            
-	            <ToggleButton
+	            <Spinner
 		            android:id="@+id/tgl_res_10c"
-		            android:layout_width="150dp"
+		            android:layout_width="fill_parent"
 		            android:layout_height="wrap_content"
-		            android:layout_weight="1"
-		            android:textOn="@string/si"
-		            android:textOff="@string/no"/>
+		            android:layout_weight="2"
+                    android:entries="@array/pre_post_prueba"/>
 	        </LinearLayout>
 	        
 	        <LinearLayout
@@ -1090,14 +1055,14 @@ android:layout_height="match_parent">
 	                android:layout_width="fill_parent"
 	                android:layout_height="wrap_content"
 	                android:text="@string/pregunta_10d"
-	                android:layout_weight="2"
+	                android:layout_weight="1"
 	                android:textAppearance="?android:attr/textAppearanceMedium" />
 	            
-	            <ToggleButton
+	            <Spinner
 		            android:id="@+id/tgl_res_10d"
-		            android:layout_width="150dp"
+		            android:layout_width="fill_parent"
 		            android:layout_height="wrap_content"
-		            android:layout_weight="1"
+		            android:layout_weight="2"
 		            android:textOn="@string/si"
 		            android:textOff="@string/no"/>
 	        </LinearLayout>
@@ -1115,16 +1080,15 @@ android:layout_height="match_parent">
 	                android:layout_width="fill_parent"
 	                android:layout_height="wrap_content"
 	                android:text="@string/pregunta_10e"
-	                android:layout_weight="2"
+	                android:layout_weight="1"
 	                android:textAppearance="?android:attr/textAppearanceMedium" />
 	            
-	            <ToggleButton
+	            <Spinner
 		            android:id="@+id/tgl_res_10e"
-		            android:layout_width="150dp"
+		            android:layout_width="fill_parent"
 		            android:layout_height="wrap_content"
-		            android:layout_weight="1"
-		            android:textOn="@string/si"
-		            android:textOff="@string/no"/>
+		            android:layout_weight="2"
+                    android:entries="@array/pre_post_prueba"/>
 	        </LinearLayout>
 	        
 	        <LinearLayout
@@ -1140,16 +1104,15 @@ android:layout_height="match_parent">
 	                android:layout_width="fill_parent"
 	                android:layout_height="wrap_content"
 	                android:text="@string/pregunta_10f"
-	                android:layout_weight="2"
+	                android:layout_weight="1"
 	                android:textAppearance="?android:attr/textAppearanceMedium" />
 	            
-	            <ToggleButton
+	            <Spinner
 		            android:id="@+id/tgl_res_10f"
-		            android:layout_width="150dp"
+		            android:layout_width="fill_parent"
 		            android:layout_height="wrap_content"
-		            android:layout_weight="1"
-		            android:textOn="@string/si"
-		            android:textOff="@string/no"/>
+		            android:layout_weight="2"
+                    android:entries="@array/pre_post_prueba"/>
 	        </LinearLayout>
 	        
 	        <LinearLayout
@@ -1165,16 +1128,15 @@ android:layout_height="match_parent">
 	                android:layout_width="fill_parent"
 	                android:layout_height="wrap_content"
 	                android:text="@string/pregunta_10g"
-	                android:layout_weight="2"
+	                android:layout_weight="1"
 	                android:textAppearance="?android:attr/textAppearanceMedium" />
 	            
-	            <ToggleButton
+	            <Spinner
 		            android:id="@+id/tgl_res_10g"
-		            android:layout_width="150dp"
+		            android:layout_width="fill_parent"
 		            android:layout_height="wrap_content"
-		            android:layout_weight="1"
-		            android:textOn="@string/si"
-		            android:textOff="@string/no"/>
+		            android:layout_weight="2"
+                    android:entries="@array/pre_post_prueba"/>
 	        </LinearLayout>
 	        
 	        <!-- FIN PREGUNTA 10 -->
@@ -1199,6 +1161,5 @@ android:layout_height="match_parent">
 
     </FrameLayout>
 
-	</RelativeLayout>
-
+</RelativeLayout>
 

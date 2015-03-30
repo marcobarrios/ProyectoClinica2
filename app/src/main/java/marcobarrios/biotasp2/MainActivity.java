@@ -171,10 +171,10 @@ public class MainActivity extends Activity {
                 backpress = 0;
                 break;
             case 3:
-                //fragment = new FragmentCursos();
+                fragment = new FragmentSoporte();
                 break;
             case 4:
-                //fragment = new FragmentNotas();
+                fragment = new FragmentAbout();
                 break;
             default:
                 fragment = new FragmentInicial();

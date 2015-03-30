@@ -1,6 +1,7 @@
 package marcobarrios.biotasp2;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -22,9 +23,6 @@ public class ActivityDetailActividad extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_detail_actividad);
-
-        getActionBar().setDisplayHomeAsUpEnabled(true);
-        getActionBar().setHomeButtonEnabled(true);
 
         inicializarComponentes();
         inicializarListView();
@@ -54,7 +52,8 @@ public class ActivityDetailActividad extends Activity {
         btnNewParticipante.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent i = new Intent(getApplicationContext(), SelectItsTvc.class);
+                startActivity(i);
             }
         });
     }

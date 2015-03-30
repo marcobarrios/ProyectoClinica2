@@ -17,6 +17,9 @@
         <item>@drawable/ic_nota</item>
     </array>
 
+    <string name="about">Acerca de</string>
+    <string name="tvc_">TVC</string>
+    <string name="its_">ITS</string>
     <string name="action_websearch">Web search</string>
     <string name="main_title">Registro de nueva intervención</string>
     <string name="main_huella">Registrar Huella</string>
@@ -53,8 +56,12 @@
     <string name="drawer_close">Cerrar</string>
     <string name="datos_actividad">Crear Nueva Actividad</string>
     <string name="condones_demo">Condones demo</string>
-    <string name="condones">Condones entregados</string>
+    <string name="condones">Condones</string>
+    <string name="condones_masculino">Condones Masculino</string>
+    <string name="condones_femenino">Condones Femenino</string>
     <string name="lubricantes">Lubricantes</string>
+    <string name="lubricantes_sachet">Lubricantes Sachet</string>
+    <string name="lubricantes_tubo">Lubricantes Tubo</string>
     <string name="titulo_test">Test de conocimientos</string>
     <string name="si">Sí</string>
     <string name="no">No</string>
@@ -69,7 +76,6 @@
     <string name="ingrese_password">Contraseña</string>
     <string name="ingreso_boton">Ingreso</string>
     <string name="impresos">Impresos entregados</string>
-    <string name="lubricantes_tubo">Tubos</string>
     <string name="referencia_vih">Pasa a TVC</string>
     <string name="referencia_its">Pasa a ITS</string>
     <string name="tratado_its">Tratado</string>
@@ -297,10 +303,24 @@
     </string-array>
 
     <string-array name="array_tvc">
-        <item>VIH Positivo</item>
-        <item>VIH Negativo</item>
-        <item>VIH Presuntivo</item>
+        <item>No reactivo</item>
+        <item>Reactivo</item>
+        <item>Interminado</item>
     </string-array>
+
+    <array name="motivos_consulta_tvc">
+        <item>Referencia</item>
+        <item>Iniciativa Propia</item>
+        <item>Tuberculosis</item>
+        <item>Embarazo</item>
+        <item>Paciente Sintomático</item>
+        <item>ITS</item>
+        <item>Donador</item>
+        <item>Accidente Laboral</item>
+        <item>Abuso Sexual</item>
+        <item>Violación</item>
+        <item>Otro</item>
+    </array>
 
     <!-- <string-array name="array_drawer_options">
         <item>Inicio de sesión</item>
@@ -532,6 +552,11 @@
         <item>UAI "Dr. Isaac Cohen Alcahé" - Quetzaltenango</item>
         <item>UAI "Las Lagunas, Zona 10" - Huehuetenango</item>
     </string-array>
+
+    <array name="pre_post_prueba">
+        <item>Si</item>
+        <item>No</item>
+    </array>
 
     <string name="title_activity_datos_actividad">DatosActividad</string>
     <string name="hello_world">Hello world!</string>

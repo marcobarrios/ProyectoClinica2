@@ -24,9 +24,6 @@ public class ActivityNewActividad extends Activity implements OnDateSelected, On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.datosactividad_fragment);
 
-        getActionBar().setDisplayHomeAsUpEnabled(true);
-        getActionBar().setHomeButtonEnabled(true);
-
         btnDate = (Button) findViewById(R.id.txt_fecha_da);
         btnTime = (Button) findViewById(R.id.txt_hora_da);
 

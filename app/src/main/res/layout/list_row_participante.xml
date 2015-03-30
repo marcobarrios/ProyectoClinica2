@@ -9,7 +9,7 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="5dp"
+        android:padding="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
         android:background="@drawable/card_view"
@@ -17,7 +17,7 @@
     	
 	    <TextView
 	        android:id="@+id/txt_row_name_participante"
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="15dp"
             android:paddingTop="10dp"
@@ -37,6 +37,40 @@
             android:layout_below="@+id/txt_row_name_participante"
             android:text="Dato Participante"
 	        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ImageView
+            android:id="@+id/img_check_tvc"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/check1"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/its_"
+            android:layout_below="@+id/img_check_tvc"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="95dp"/>
+
+        <ImageView
+            android:id="@+id/img_check_its"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/check2"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="80dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tvc_"
+            android:layout_below="@+id/img_check_its"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="30dp"/>
 
 	</RelativeLayout>
 </FrameLayout>

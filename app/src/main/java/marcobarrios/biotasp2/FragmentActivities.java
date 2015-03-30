@@ -28,6 +28,7 @@ public class FragmentActivities extends Fragment {
         inicializarComponentes();
         inicializarListView();
 
+
         agregarActividad("Actividad 1","11/01/2015");
         agregarActividad("Actividad 2","12/02/2015");
         agregarActividad("Actividad 3","13/03/2015");
@@ -38,6 +39,7 @@ public class FragmentActivities extends Fragment {
         agregarActividad("Actividad 8","18/08/2015");
         agregarActividad("Actividad 9","19/09/2015");
         agregarActividad("Actividad 10","20/10/2015");
+
         return v;
     }
 
