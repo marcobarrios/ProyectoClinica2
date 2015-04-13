@@ -27,7 +27,7 @@
         </activity>
 
         <activity
-            android:name=".SelectItsTvc"
+            android:name=".DialogSelect"
             android:label="Seleccionar"
             android:theme="@style/Base.Theme.AppCompat.Light.Dialog">
         </activity>

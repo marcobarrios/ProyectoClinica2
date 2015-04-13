@@ -1,7 +1,7 @@
 package marcobarrios.biotasp2;
 
 import android.app.Activity;
-import android.content.Intent;
+import android.app.DialogFragment;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -44,7 +44,8 @@ public class ActivityDetailActividad extends Activity {
         activitiesListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> listEvents, View view, int position, long id) {
-
+                DialogFragment dialog = new DialogSelect();
+                dialog.show(getFragmentManager(), "dialog");
             }
         });
 
@@ -52,8 +53,7 @@ public class ActivityDetailActividad extends Activity {
         btnNewParticipante.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), SelectItsTvc.class);
-                startActivity(i);
+
             }
         });
     }

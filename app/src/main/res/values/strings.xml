@@ -558,6 +558,11 @@
         <item>No</item>
     </array>
 
+    <array name="elementos_dialog">
+        <item>ITS</item>
+        <item>TVC</item>
+    </array>
+
     <string name="title_activity_datos_actividad">DatosActividad</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_my_login">BioTasP</string>
